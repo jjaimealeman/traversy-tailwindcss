@@ -4,3 +4,18 @@ Starting the course `Tailwind From Scratch` by Brad Traversy today.
 https://www.udemy.com/course/tailwind-from-scratch/learn/lecture/32345594#overview
 
 Cloned my own repo `https://github.com/jjaimealeman/vite-vue3-tailwind-starter.git`
+
+---
+
+### Course Links
+
+#### Code & Demos:
+
+> Main Website With Project Demos - https://tailwindfromscratch.com
+>
+> Code For Sandbox - https://github.com/bradtraversy/tailwind-sandbox
+>
+> Code For All Projects - https://github.com/bradtraversy/tailwind-course-projects
+>
+> Code For Simple Tailwind Starter - https://github.com/bradtraversy/simple-tailwind-starter
+>
