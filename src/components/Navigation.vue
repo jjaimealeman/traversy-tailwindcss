@@ -1,11 +1,11 @@
 <template>
 	<nav>
-		<div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize">
-			<router-link active-class="active" to="/">Home</router-link>
-			<router-link active-class="active" to="/about">About</router-link>
-			<router-link active-class="active" to="/colors">Colors</router-link>
-			<router-link active-class="active" to="/api">API</router-link>
-			<router-link active-class="active" to="/NotFound">404</router-link>
+		<div class="container flex items-center justify-center p-6 mx-auto text-xl text-gray-600 capitalize sm:text-base">
+			<router-link class="px-4 sm:px-0" active-class="active" to="/">Home</router-link>
+			<router-link class="px-4 sm:px-0" active-class="active" to="/about">About</router-link>
+			<router-link class="px-4 sm:px-0" active-class="active" to="/colors">Colors</router-link>
+			<router-link class="px-4 sm:px-0" active-class="active" to="/api">API</router-link>
+			<router-link class="px-4 sm:px-0" active-class="active" to="/NotFound">404</router-link>
 		</div>
 	</nav>
 </template>
