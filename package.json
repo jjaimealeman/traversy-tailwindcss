@@ -1,0 +1,40 @@
+{
+	"name": "vite-vue3-tailwind-starter",
+	"description": "A simple boilerplate using Vue3, Vite, and TailwindCSS for my projects.",
+	"version": "0.0.1",
+	"author": {
+		"name": "Jaime J. Aleman",
+		"email": "jjaimealeman@gmail.com",
+		"url": "https://github.com/jjaimealeman/vite-vue3-tailwind-starter"
+	},
+	"license": "WTFPL",
+	"scripts": {
+		"dev": "vite --host",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"dependencies": {
+		"@vueuse/core": "^9.6.0",
+		"@vueuse/head": "^1.0.22",
+		"axios": "^1.2.1",
+		"unplugin-icons": "^0.14.14",
+		"vue": "^3.2.45",
+		"vue-router": "^4.1.6"
+	},
+	"devDependencies": {
+		"@headlessui/vue": "^1.7.5",
+		"@iconify/json": "^2.1.150",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/forms": "^0.5.3",
+		"@tailwindcss/line-clamp": "^0.4.2",
+		"@tailwindcss/typography": "^0.5.8",
+		"@types/tailwindcss": "^3.1.0",
+		"@vitejs/plugin-vue": "^4.0.0",
+		"@vue/compiler-sfc": "^3.2.45",
+		"autoprefixer": "^10.4.13",
+		"prettier-plugin-tailwindcss": "^0.2.1",
+		"tailwindcss": "^3.2.4",
+		"unplugin-vue-components": "^0.22.11",
+		"vite": "^4.0.0"
+	}
+}
