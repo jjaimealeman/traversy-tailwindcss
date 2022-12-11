@@ -8,18 +8,18 @@
 			<div>
 				<div class="group">
 					<p>Hovering over this div will show the tooltip.</p>
-					<span class="absolute z-50 hidden py-2 px-4 -mt-16 text-center bg-yellow-400 text-orange-700 border border-yellow-600 rounded tooltip-text group-hover:block">Hey There!</span>
+					<span class="absolute z-50 hidden px-4 py-2 -mt-16 text-center text-orange-700 bg-yellow-400 border border-yellow-600 rounded tooltip-text group-hover:block">Hey There!</span>
 				</div>
 
 				<div class="group">
 					<p class="mt-4">Hover me
-						<!-- <span class="absolute z-50 hidden py-2 px-4 -mt-16 -ml-6 text-center bg-blue-200 rounded tooltip-text group-hover:block">Look at this!</span> -->
-						<span class="absolute z-50 hidden py-2 px-4 ml-20 text-center bg-blue-400 text-indigo-700 border border-blue-600  rounded tooltip-text group-hover:block">Look at this!</span>
+						<!-- <span class="absolute z-50 hidden px-4 py-2 -mt-16 -ml-6 text-center bg-blue-200 rounded tooltip-text group-hover:block">Look at this!</span> -->
+						<span class="absolute z-50 hidden px-4 py-2 ml-20 text-center text-indigo-700 bg-blue-400 border border-blue-600 rounded tooltip-text group-hover:block">Look at this!</span>
 					</p>
 				</div>
 			</div>
 
-			<section class="text-3xl text-center font-bold my-auto py-8 px-16 leading-tight text-red-900 bg-white mx-4 p-4 opacity-50 rounded-md">
+			<section class="p-4 px-16 py-8 mx-4 my-auto text-3xl font-bold leading-tight text-center text-red-900 bg-white rounded-md opacity-50">
 				<p>Page Not Found</p>
 				<p class="text-red-600">(uh-oh)</p>
 			</section>
@@ -29,8 +29,8 @@
 
 
 <script>
-	import { defineComponent, computed, reactive } from 'vue'
 	import { useHead } from '@vueuse/head'
+import { computed, defineComponent, reactive } from 'vue'
 	export default defineComponent({
 		setup() {
 			const siteData = reactive({
