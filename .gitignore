@@ -7,3 +7,4 @@ debug.log
 .idea
 _traversy_files
 _tailwind_sandbox
+.env
