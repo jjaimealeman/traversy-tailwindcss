@@ -60,7 +60,8 @@ export default defineComponent({
 		},
 		async mounted () {
 			try {
-				const response = await axios.get('https://915websites.com/items/blog')
+				// const response = await axios.get('https://915websites.com/items/blog')
+				const response = await axios.get('https://directus-fly-io.fly.dev/items/blog')
 				this.blogs = response.data.data
 			} catch (error) {
 				this.error = error;
