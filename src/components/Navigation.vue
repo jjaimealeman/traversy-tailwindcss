@@ -4,8 +4,9 @@
 			<router-link class="px-4 sm:px-0" active-class="active" to="/">Home</router-link>
 			<router-link class="px-4 sm:px-0" active-class="active" to="/about">About</router-link>
 			<router-link class="px-4 sm:px-0" active-class="active" to="/colors">Colors</router-link>
-			<router-link class="px-4 sm:px-0" active-class="active" to="/api">API</router-link>
-			<router-link class="px-4 sm:px-0" active-class="active" to="/NotFound">404</router-link>
+			<!-- <router-link class="px-4 sm:px-0" active-class="active" to="/api">API</router-link> -->
+			<!-- <router-link class="px-4 sm:px-0" active-class="active" to="/NotFound">404</router-link> -->
+			<router-link class="px-4 sm:px-0" active-class="active" to="/test">test</router-link>
 		</div>
 	</nav>
 </template>
