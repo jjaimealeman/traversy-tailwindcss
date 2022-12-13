@@ -3,6 +3,7 @@ import About from './views/About.vue'
 import Colors from './views/Colors.vue'
 import API from './views/API.vue'
 import NotFound from './views/NotFound.vue'
+import Test from './views/Test.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -25,6 +26,11 @@ export const routes = [
 		component: API,
 		name: 'API',
 		path: '/api'
+	},
+	{
+		component: Test,
+		name: 'Test',
+		path: '/test'
 	},
 	{
 		component: NotFound,
