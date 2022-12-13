@@ -16,9 +16,9 @@
 				<ButtonRepo />
 			</div>
 		</div>
-		<div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 md:flex md:items-center md:justify-between md:py-16 md:px-8">
-			<p class="w-full p-2 md:w-1/2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptate dolore suscipit aut quis impedit facilis quia quas eum, ullam soluta doloribus tempora culpa molestiae ipsum tempore at labore animi cum minima ex. Voluptas corrupti omnis praesentium nihil voluptatem tempora eius cupiditate, libero perspiciatis dolorem officia possimus ex aliquam placeat ea ratione eveniet nostrum suscipit?</p>
-			<p class="w-full p-2 md:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate minus aliquid corrupti possimus optio omnis neque ut. Nostrum molestiae maxime quasi, neque nisi rerum illum accusamus commodi ratione nam dolorum beatae eaque enim molestias voluptatibus qui. Illum, nihil reiciendis!</p>
+		<div class="flex flex-col md:flex-row p-4">
+			<p class="pb-4 md:px-4 md:w-1/2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptate dolore suscipit aut quis impedit facilis quia quas eum, ullam soluta doloribus tempora culpa molestiae ipsum tempore at labore animi cum minima ex. Voluptas corrupti omnis praesentium nihil voluptatem tempora eius cupiditate, libero perspiciatis dolorem officia possimus ex aliquam placeat ea ratione eveniet nostrum suscipit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio ipsam fugiat quaerat voluptatem esse excepturi autem atque voluptas repellendus.</p>
+			<p class="md:px-4 md:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate minus aliquid corrupti possimus optio omnis neque ut. Nostrum molestiae maxime quasi, neque nisi rerum illum accusamus commodi ratione nam dolorum beatae eaque enim molestias voluptatibus qui. Illum, nihil reiciendis!</p>
 		</div>
 	</div>
 </template>
