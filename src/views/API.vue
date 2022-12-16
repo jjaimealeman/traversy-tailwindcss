@@ -69,19 +69,3 @@ export default defineComponent({
 		}
 	})
 </script>
-
-
-<style scoped>
-	#blog p {
-		@apply py-4
-	}
-	#blog h2 {
-		@apply text-2xl font-bold leading-8 tracking-normal mb-2
-	}
-	#blog a {
-		@apply block underline p-0 mb-2 hover:bg-purple-200 hover:text-purple-600 hover:pl-1 transition-all
-	}
-	#blog span {
-		@apply prose;
-	}
-</style>
