@@ -5,6 +5,6 @@ dist-ssr
 *.local
 debug.log
 .idea
-_traversy_files
 _tailwind_sandbox
+_traversy_files
 .env
