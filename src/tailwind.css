@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply bg-slate-50 text-gray-800;
+		@apply bg-slate-50 text-gray-800 font-sans;
 		animation: fadeInAnimation ease 0.25s;
 		animation-iteration-count: 1;
 		animation-fill-mode: forwards;

@@ -8,7 +8,7 @@
                     hover:scale-105
                     " src="/images/email-subscribe/images/linkedin-sales-solutions-0QvTyp0gH3A-unsplash.jpg" alt="">
                 <div class="p-6 md:p-12">
-                    <h2 class="font-sans text-xl font-medium text-center text-white md:text-left">
+                    <h2 class="text-xl font-medium text-center text-white md:text-left">
                         {{ title }}
                     </h2>
                     <p class="max-w-xs my-4 text-xs leading-5 tracking-wide text-center text-white md:text-left">
