@@ -7,10 +7,10 @@
 				<div class="text-orange-600">Vite + Vue 3 + Tailwind CSS</div>
 			</h2>
 			<div class="flex mt-8 lg:mt-0 lg:flex-shrink-0">
-				<div class="inline-flex rounded-md shadow">
+				<div class="inline-flex">
 					<router-link
 						to="/colors"
-						class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-gray-800 transition duration-150 ease-in-out bg-orange-400 border border-transparent rounded-md hover:bg-orange-500 focus:outline-none"
+						class="shadow-none transition-all duration-300 p-2 m-2 rounded-md border-2 border-slate-700 text-slate-900 hover:-translate-y-[0.1em] bg-orange-500 active:bg-orange-300 active:text-orange-700 active:border-orange-700 hover:shadow-orange-500 hover:shadow-md"
 					>Colors Page</router-link>
 				</div>
 				<ButtonRepo />
