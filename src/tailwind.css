@@ -5,18 +5,18 @@
 @layer base {
 	body {
 		@apply bg-slate-50 text-gray-800;
-		/* animation: fadeInAnimation ease 0.25s;
+		animation: fadeInAnimation ease 0.25s;
 		animation-iteration-count: 1;
-		animation-fill-mode: forwards; */
+		animation-fill-mode: forwards;
 	}
-	/* @keyframes fadeInAnimation {
+	@keyframes fadeInAnimation {
 		0% {
 			opacity: 0;
 		}
 		100% {
 			opacity: 1;
 		 }
-	} */
+	}
     ::selection {
         background: #2c73d244; /* WebKit/Blink Browsers */
     }
