@@ -9,9 +9,9 @@
 			<div class="flex mt-8 lg:mt-0 lg:flex-shrink-0">
 				<div class="inline-flex rounded-md shadow">
 					<router-link
-						to="/about"
+						to="/colors"
 						class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-gray-800 transition duration-150 ease-in-out bg-orange-400 border border-transparent rounded-md hover:bg-orange-500 focus:outline-none"
-					>About Page</router-link>
+					>Colors Page</router-link>
 				</div>
 				<ButtonRepo />
 			</div>

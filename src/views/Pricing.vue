@@ -1,6 +1,6 @@
 <template>
 	<!-- global container -->
-	<div class="flex items-center justify-center min-h-screen pt-20">
+	<div class="flex items-center justify-center min-h-screen py-16">
 		<!-- inner container -->
 		<div class="flex flex-col my-6 space-y-6 md:space-y-0 md:space-x-6 md:flex-row md:my-0">
 

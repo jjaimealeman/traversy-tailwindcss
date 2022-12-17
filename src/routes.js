@@ -1,9 +1,9 @@
 import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Pricing from './views/Pricing.vue'
 import Colors from './views/Colors.vue'
 import API from './views/API.vue'
 import NotFound from './views/NotFound.vue'
-import Test from './views/Test.vue'
+import Email from './views/Email.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -13,9 +13,9 @@ export const routes = [
 		path: '/'
 	},
 	{
-		component: About,
-		name: 'About',
-		path: '/about'
+		component: Pricing,
+		name: 'Pricing',
+		path: '/pricing'
 	},
 	{
 		component: Colors,
@@ -28,9 +28,9 @@ export const routes = [
 		path: '/api'
 	},
 	{
-		component: Test,
-		name: 'Test',
-		path: '/test'
+		component: Email,
+		name: 'Email',
+		path: '/Email'
 	},
 	{
 		component: NotFound,
