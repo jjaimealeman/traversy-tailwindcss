@@ -2,11 +2,7 @@
 	<main>
 		<div class="z-[60] fixed bottom-4 left-0 bg-black text-white border-[1px] border-white p-1 text-xs">{{ windowWidth }}x{{ windowHeight }}</div>
 		<Navigation />
-		<router-view v-slot="{ Component }">
-			<transition name="fade" mode="out-in">
-				<component :is="Component" />
-			</transition>
-		</router-view>
+		<router-view />
 		<Footer />
 	</main>
 </template>
@@ -34,13 +30,13 @@ export default {
 </script>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
+.v-enter-active,
+.v-leave-active {
 	transition: opacity 0.25s ease;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.v-enter-from,
+.v-leave-to {
 	opacity: 0;
 }
 </style>
