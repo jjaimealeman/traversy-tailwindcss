@@ -4,6 +4,7 @@ import { resolve } from 'path'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
 
@@ -22,6 +23,7 @@ export default defineConfig({
 			  IconsResolver(),
 			]
 		  }),
+		AutoImport({ /* options */ })
 	],
 
 	resolve: {
