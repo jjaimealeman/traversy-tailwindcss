@@ -23,7 +23,10 @@ export default defineConfig({
 			  IconsResolver(),
 			]
 		  }),
-		AutoImport({ /* options */ })
+		AutoImport({
+			imports: ['vue', '@vueuse/core'],
+			vueTemplate: true,
+		})
 	],
 
 	resolve: {
