@@ -4,6 +4,7 @@ import Colors from './views/Colors.vue'
 import API from './views/API.vue'
 import NotFound from './views/NotFound.vue'
 import Email from './views/Email.vue'
+import Modal from './views/Modal.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -32,6 +33,11 @@ export const routes = [
 		name: 'Email',
 		path: '/Email'
 	},
+    {
+        component: Modal,
+        name: 'Modal',
+        path: '/modal'
+    },
 	{
 		component: NotFound,
 		name: 'NotFound',

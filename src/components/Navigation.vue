@@ -2,6 +2,7 @@
 	<nav class="z-50">
 		<div class="container flex items-center justify-center py-4 mx-auto text-xl text-gray-600 capitalize md:py-6 sm:text-base">
 			<router-link class="px-4 sm:px-0" active-class="active" to="/">home</router-link>
+			<router-link class="px-4 sm:px-0" active-class="active" to="/modal">modal</router-link>
 			<router-link class="px-4 sm:px-0" active-class="active" to="/pricing">pricing</router-link>
 			<router-link class="px-4 sm:px-0" active-class="active" to="/email">email</router-link>
 			<router-link class="px-4 sm:px-0" active-class="active" to="/colors">colors</router-link>
