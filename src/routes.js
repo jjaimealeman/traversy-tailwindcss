@@ -5,6 +5,7 @@ import API from './views/API.vue'
 import NotFound from './views/NotFound.vue'
 import Email from './views/Email.vue'
 import Product from './views/Product.vue'
+import Images from './views/Images.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -37,6 +38,11 @@ export const routes = [
         component: Product,
         name: 'Product',
         path: '/product'
+    },
+    {
+        component: Images,
+        name: 'Images',
+        path: '/images'
     },
 	{
 		component: NotFound,
