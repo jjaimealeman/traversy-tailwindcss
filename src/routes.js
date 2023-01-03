@@ -6,6 +6,7 @@ import NotFound from './views/NotFound.vue'
 import Email from './views/Email.vue'
 import Product from './views/Product.vue'
 import Images from './views/Images.vue'
+import Login from './views/Login.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -43,6 +44,11 @@ export const routes = [
         component: Images,
         name: 'Images',
         path: '/images'
+    },
+    {
+        component: Login,
+        name: 'Login',
+        path: '/login'
     },
 	{
 		component: NotFound,
