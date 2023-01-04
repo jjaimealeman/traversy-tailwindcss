@@ -1,11 +1,4 @@
-
 {
-    "overrides": [
-        {
-          "files": "*.html",
-          "options": {
-            "respectLineBreaks": true
-          }
-        }
-      ]
+    "semi": false,
+    "singleQuote": true
 }

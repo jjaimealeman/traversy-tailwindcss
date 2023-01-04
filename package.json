@@ -1,43 +1,32 @@
 {
-	"name": "vite-vue3-tailwind-starter",
-	"description": "A simple boilerplate using Vue3, Vite, and TailwindCSS for my projects.",
-	"version": "0.0.1",
-	"author": {
-		"name": "Jaime J. Aleman",
-		"email": "jjaimealeman@gmail.com",
-		"url": "https://github.com/jjaimealeman/vite-vue3-tailwind-starter"
-	},
-	"license": "WTFPL",
-	"scripts": {
-		"dev": "vite --host",
-		"build": "vite build",
-		"serve": "vite preview"
-	},
-	"dependencies": {
-		"@vueuse/core": "^9.6.0",
-		"@vueuse/head": "^1.0.22",
-		"axios": "^1.2.1",
-		"unplugin-icons": "^0.14.14",
-		"vue": "^3.2.45",
-		"vue-router": "^4.1.6"
-	},
-	"devDependencies": {
-		"@headlessui/vue": "^1.7.5",
-		"@iconify/json": "^2.1.150",
-		"@iconify/vue": "^4.0.2",
-		"@tailwindcss/aspect-ratio": "^0.4.2",
-		"@tailwindcss/forms": "^0.5.3",
-		"@tailwindcss/line-clamp": "^0.4.2",
-		"@tailwindcss/typography": "^0.5.8",
-		"@types/tailwindcss": "^3.1.0",
-		"@vitejs/plugin-vue": "^4.0.0",
-		"@vue/compiler-sfc": "^3.2.45",
-		"autoprefixer": "^10.4.13",
-		"prettier-plugin-tailwindcss": "^0.2.1",
-		"tailwindcss": "^3.2.4",
-		"tailwindcss-debug-screens": "^2.2.1",
-		"unplugin-auto-import": "^0.12.1",
-		"unplugin-vue-components": "^0.22.12",
-		"vite": "^4.0.0"
-	}
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "allupdate": "yarn upgrade-interactive --latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nuxt": "3.0.0",
+    "pinia": "^2.0.24",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "@directus/sdk": "^10.3.0",
+    "@headlessui/vue": "^1.7.4",
+    "@heroicons/vue": "^2.0.13",
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@pinia/nuxt": "^0.4.4",
+    "@tailwindcss/aspect-ratio": "0.4.2",
+    "@tailwindcss/forms": "0.5.3",
+    "@tailwindcss/line-clamp": "0.4.2",
+    "@tailwindcss/typography": "0.5.8",
+    "@vueuse/core": "^9.5.0",
+    "@vueuse/nuxt": "^9.5.0"
+  }
 }
