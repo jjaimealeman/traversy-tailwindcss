@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         'nuxt-directus',
     ],
     directus: {
-        url: 'https://y4aazew4.directus.app',
+        url: 'https://y4aazew4.directus.app/',
     },
 
     runtimeConfig: {
