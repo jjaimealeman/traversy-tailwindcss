@@ -1,13 +1,23 @@
 <template>
     <div class="container mx-auto">
-        <ul class="bg-slate-300 p-2 mb-4">
-            <li class="inline-block mr-2">Home</li>
-            <li class="inline-block">
-                <NuxtLink class="block" to="/about"> About </NuxtLink>
-            </li>
-        </ul>
+        <TheHeader />
         <EmailSubscribe />
         <TheCard />
-        <TheCard />
+        <TheFooter />
     </div>
 </template>
+
+
+<script setup lang="ts">
+useHead({
+  title: 'Home',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+  bodyAttrs: {
+    class: 'debug-screens'
+  },
+  // script: [ { children: 'console.log(\'Hello world\')' } ]
+})
+</script>
+

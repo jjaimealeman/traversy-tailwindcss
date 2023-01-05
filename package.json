@@ -27,6 +27,7 @@
     "nuxt-icon": "^0.1.8",
     "pinia": "^2.0.24",
     "postcss": "^8.4.18",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "tailwindcss-debug-screens": "^2.2.1"
   }
 }
