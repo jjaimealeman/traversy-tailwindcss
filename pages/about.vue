@@ -10,7 +10,7 @@
 				<div class="overflow-hidden transition-shadow duration-300 bg-white rounded">
 					<div class="py-5">
 						<p class="mb-2 text-xs font-semibold text-gray-600">{{ new Date(post.date_created).toLocaleDateString() }}</p>
-						<NuxtLink :to="`/blog/${post.id}`" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+						<NuxtLink :to="`/blog/${post.slug}`" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
 							><p class="text-2xl font-bold leading-5 text-blue-800">{{ post.title }}</p></NuxtLink
 						>
 						<p class="mb-4 text-gray-700">{{ post.content.slice(0, 300) }}</p>
@@ -22,8 +22,7 @@
 </template>
 
 <script setup>
-const { getItems } = useDirectusItems();
-
-const posts = await getItems({ collection: "pages" });
+    const { getItems } = useDirectusItems();
+    const posts = await getItems({ collection: "pages" });
 </script>
 

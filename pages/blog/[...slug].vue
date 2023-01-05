@@ -11,14 +11,21 @@
         </div>
     </div>
 </template>
+
+
 <script setup>
-const { getItemById } = useDirectusItems()
-const route = useRoute()
-const post = await getItemById({ collection: 'pages', id: route.params.id })
-if (!post) throwError('No article found, 404')
+    const { getItems } = useDirectusItems()
+    const route = useRoute()
+    const posts = await getItems({ 
+        collection: 'pages', 
+        params: {
+            filter: { slug: route.params.slug[0] },
+        },
+    });
+    const post = posts[0];
+    if (!post) throwError('No article found, 404')
 
-const fileId2 = post.image;
-const fileId = '7da93be6-8591-4f14-9acf-86b5b8844171';
-const { getThumbnail: img } = useDirectusFiles();
-
+    const fileId2 = post.image;
+    const fileId = '7da93be6-8591-4f14-9acf-86b5b8844171';
+    const { getThumbnail: img } = useDirectusFiles();
 </script>
