@@ -13,8 +13,7 @@
 						<NuxtLink :to="`/blog/${post.id}`" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
 							><p class="text-2xl font-bold leading-5 text-blue-800">{{ post.title }}</p></NuxtLink
 						>
-						<p class="mb-4 text-gray-700">{{ post.content }}</p>
-                        {{ post.image }}
+						<p class="mb-4 text-gray-700">{{ post.content.slice(0, 300) }}</p>
 					</div>
 				</div>
 			</div>
