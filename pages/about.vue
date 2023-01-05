@@ -8,17 +8,19 @@
 			</div>
 			<div class="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full" v-for="post in posts">
 				<div class="overflow-hidden transition-shadow duration-300 bg-white rounded">
-					<div class="py-5">
-						<p class="mb-2 text-xs font-semibold text-gray-600">
+					<div class="">
+						<p class="">
                             {{ new Date(post.date_created).toLocaleDateString("en-US", dateOptions) }}
                         </p>
-						<NuxtLink :to="`/blog/${post.slug}`" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700">
-                            <p class="text-2xl font-bold leading-5 text-blue-800">
+						<NuxtLink class="" :to="`/blog/${post.slug}`">
+                            <p class="">
                                 {{ post.title }}
-                                {{ post.image }}
                             </p>
+                            <img class="" :src="image + post.image" :alt="post.image_alt" />
                         </NuxtLink>
-						<p class="mb-4 text-gray-700">
+
+
+						<p class="">
                             {{ post.content.slice(0, 300) }}
                         </p>
 					</div>
@@ -39,12 +41,7 @@
         },
     });
 
-    // Filter and display post data only if status is published
-    // const isPublished = (post) => post.status === "published";
-    // const publishedPosts = posts.filter(isPublished);
-
-    // Output post.image path for HTML img tag.
-
+    const image = 'https://y4aazew4.directus.app/assets/';
 
     const dateOptions = {
         weekday: "long",
