@@ -25,4 +25,7 @@ See an example of a <MyIcon> component:
         <p><MyIcon /></p>
     </template>
 ```
+LearnVue add dark mode
+https://www.youtube.com/watch?v=cGN91TLXrC8
+
 
