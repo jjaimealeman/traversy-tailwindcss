@@ -9,11 +9,18 @@
 			<div class="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full" v-for="post in posts">
 				<div class="overflow-hidden transition-shadow duration-300 bg-white rounded">
 					<div class="py-5">
-						<p class="mb-2 text-xs font-semibold text-gray-600">{{ new Date(post.date_created).toLocaleDateString() }}</p>
-						<NuxtLink :to="`/blog/${post.slug}`" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
-							><p class="text-2xl font-bold leading-5 text-blue-800">{{ post.title }}</p></NuxtLink
-						>
-						<p class="mb-4 text-gray-700">{{ post.content.slice(0, 300) }}</p>
+						<p class="mb-2 text-xs font-semibold text-gray-600">
+                            {{ new Date(post.date_created).toLocaleDateString("en-US", dateOptions) }}
+                        </p>
+						<NuxtLink :to="`/blog/${post.slug}`" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700">
+                            <p class="text-2xl font-bold leading-5 text-blue-800">
+                                {{ post.title }}
+                                {{ post.image }}
+                            </p>
+                        </NuxtLink>
+						<p class="mb-4 text-gray-700">
+                            {{ post.content.slice(0, 300) }}
+                        </p>
 					</div>
 				</div>
 			</div>
@@ -23,6 +30,27 @@
 
 <script setup>
     const { getItems } = useDirectusItems();
-    const posts = await getItems({ collection: "pages" });
+    const posts = await getItems({ 
+        collection: "pages",
+        params: {
+            filter: { status: "published" },
+            // Sort data by date_created
+            sort: "-date_created",
+        },
+    });
+
+    // Filter and display post data only if status is published
+    // const isPublished = (post) => post.status === "published";
+    // const publishedPosts = posts.filter(isPublished);
+
+    // Output post.image path for HTML img tag.
+
+
+    const dateOptions = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
 </script>
 
