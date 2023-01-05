@@ -29,5 +29,8 @@
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",
     "tailwindcss-debug-screens": "^2.2.1"
+  },
+  "dependencies": {
+    "nuxt-directus": "^3.2.2"
   }
 }

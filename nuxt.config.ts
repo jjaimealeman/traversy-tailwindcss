@@ -8,8 +8,12 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@pinia/nuxt',
         '@vueuse/nuxt',
-        'nuxt-icon'
+        'nuxt-icon',
+        'nuxt-directus',
     ],
+    directus: {
+        url: 'https://y4aazew4.directus.app',
+    },
 
     runtimeConfig: {
         // A PRIVATE KEY THAT IS ONLY AVAILABLE SERVER-SIDE

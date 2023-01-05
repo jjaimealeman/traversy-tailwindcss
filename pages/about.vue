@@ -1,49 +1,30 @@
 <template>
-    <div class="container mx-auto">
-        <TheHeader />
-        <!-- <div class="flex flex-row gap-12 py-12 items-center justify-center"> -->
-        <div class="grid grid-cols-3 gap-12 py-12 items-start">
-            <div class="max-w-xl text-left rounded-xl" @click="navigateTo(`/blog/${post.id}`)" v-for="post in posts" :key="post.id" :post="post" >
-                <div>
-<!-- POST.IMAGE --> 
-                    <img :src="post.image" class="rounded-t-lg object-fill" alt="post image" />
-<!-- POST.AUTHOR & POST.DATE --> 
-                    <div class="flex flex-row justify-between bg-neutral-200 text-neutral-600 py-2 px-8">
-                        <span class=""><Icon name="material-symbols:person-pin" /> {{ post.author }}</span> 
-                        <span class=""><Icon name="system-uicons:calendar-date" /> {{ post.date }}</span>
-                    </div>
-                </div>
-                <div class="px-8 py-4 bg-neutral-100 rounded-b-lg">
-                    <!-- POST.TITLE --> 
-                    <h3 class="text-2xl text-neutral-700"> {{ post.title }} </h3>
-<!-- POST.BODY --> 
-                    <p class="mb-2">{{ post.body.slice(0, 230) }}</p>
-                    <div class="flex flex-row gap-2 mt-2">
-<!-- POST.TAG --> 
-                        <span v-for="tag in post.tags" :key="tag" class="bg-neutral-200 text-neutral-600 rounded-full p-2" > <Icon name="ri:price-tag-3-line" /> {{ tag }} </span>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <TheFooter />
-    </div>
+	<div>
+		<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+			<div class="max-w-screen-sm sm:text-center sm:mx-auto">
+				<h2 class="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">My Directus Blog</h2>
+				<p class="text-base text-gray-700 md:text-lg sm:px-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p>
+				<hr class="w-full my-8 border-gray-300" />
+			</div>
+			<div class="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full" v-for="post in posts">
+				<div class="overflow-hidden transition-shadow duration-300 bg-white rounded">
+					<div class="py-5">
+						<p class="mb-2 text-xs font-semibold text-gray-600">{{ new Date(post.date_created).toLocaleDateString() }}</p>
+						<NuxtLink :to="`/blog/${post.id}`" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+							><p class="text-2xl font-bold leading-5 text-blue-800">{{ post.title }}</p></NuxtLink
+						>
+						<p class="mb-4 text-gray-700">{{ post.content }}</p>
+                        {{ post.image }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
-<script setup lang="ts">
-useHead({
-  title: 'About',
-  meta: [
-    { name: 'description', content: 'My amazing site.' }
-  ],
-  bodyAttrs: {
-    class: 'debug-screens'
-  },
-  // script: [ { children: 'console.log(\'Hello world\')' } ]
-})
-const { data: posts } = await useFetch(
-    'http://my-json-server.typicode.com/jjaimealeman/dummy-data/posts'
-    // 'https://mockend.com/jjaimealeman/dummy-data/posts'
-)
+<script setup>
+const { getItems } = useDirectusItems();
+
+const posts = await getItems({ collection: "pages" });
 </script>
 
