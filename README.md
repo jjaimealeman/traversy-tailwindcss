@@ -1,42 +1,31 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Nuxt Icon [source](https://github.com/nuxt-modules/icon#usage-)
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+```
+    <Icon name="NuxtIcon" />
+    <Icon name="🚀" />
+    <Icon name="uil:github" />
 ```
 
-## Development Server
+### Render Function [source](https://github.com/nuxt-modules/icon#render-function)
 
-Start the development server on http://localhost:3000
+You can use the Icon component in a render function (useful if you create a functional component), for this you can import it from #components:
 
-```bash
-npm run dev
+`import { Icon } from '#components'`
+
+See an example of a <MyIcon> component:
+
 ```
+    <script setup>
+        import { Icon } from '#components'
+        const MyIcon = h(Icon, { name: 'uil:twitter' })
+    </script>
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
+    <template>
+        <p><MyIcon /></p>
+    </template>
 ```
+LearnVue add dark mode
+https://www.youtube.com/watch?v=cGN91TLXrC8
 
-Locally preview production build:
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
