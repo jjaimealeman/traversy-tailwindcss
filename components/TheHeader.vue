@@ -5,7 +5,7 @@
                 <NuxtLink to="/"> Home </NuxtLink>
             </li>
             <li class="inline-block">
-                <NuxtLink to="/about"> About </NuxtLink>
+                <NuxtLink to="/directus"> Directus </NuxtLink>
             </li>
         </ul>
     </nav>

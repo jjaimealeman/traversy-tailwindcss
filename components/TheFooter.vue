@@ -6,6 +6,7 @@
             <Icon name="logos:nuxt-icon" size="28" />
             <Icon name="logos:tailwindcss-icon" size="28" />
             <Icon name="logos:netlify" size="28" />
+            <Icon name="simple-icons:directus" size="28" />
 
         </p>
 		<div class="z-[60] fixed px-2 bottom-0 right-0 bg-black text-white border-[1px] border-white p-1 text-xs">

@@ -1,9 +1,7 @@
 <template>
     <div class="container mx-auto">
-        <TheHeader />
         <EmailSubscribe />
         <TheCard />
-        <TheFooter />
     </div>
 </template>
 

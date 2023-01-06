@@ -1,0 +1,30 @@
+<template>
+    <div class="container mx-auto bg-rose-300 min-h-screen">
+        <div class="">
+            <h2 class="" > {{ post.title }} </h2>
+            <img :src="img(imageFile, { width: 500, format: 'webp' })" :alt="post.image_alt" />
+            <p class=""> {{ post.content }} </p>
+            <!-- {{ post.image }} -->
+            <!-- <img :src="img(imageFile)" alt=""> -->
+            <!-- <img :src="img(imageFile)" alt="original" /> -->
+            <!-- <img :src="img(imageFile, { width: 300, height: 300, fit: 'cover' })" :alt="post.image_alt" /> -->
+        </div>
+    </div>
+</template>
+
+
+<script setup>
+    const { getItems } = useDirectusItems()
+    const route = useRoute()
+    const posts = await getItems({ 
+        collection: 'pages', 
+        params: {
+            filter: { slug: route.params.slug[0] },
+        },
+    });
+    const post = posts[0];
+    if (!post) throwError('No article found, 404')
+
+    const imageFile = post.image;
+    const { getThumbnail: img } = useDirectusFiles();
+</script>
