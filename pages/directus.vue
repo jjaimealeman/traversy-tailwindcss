@@ -1,36 +1,35 @@
 <template>
-	<div>
-		<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-			<div class="max-w-screen-sm sm:text-center sm:mx-auto">
-				<h2 class="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">My Directus Blog</h2>
-				<p class="text-base text-gray-700 md:text-lg sm:px-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p>
-				<hr class="w-full my-8 border-gray-300" />
-			</div>
+	<div class="container mx-auto">
+        <TheHeader />
+		<div class="">
 			<div class="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full" v-for="post in posts">
 				<div class="overflow-hidden transition-shadow duration-300 bg-white rounded">
 					<div class="">
-						<p class="">
-                            {{ new Date(post.date_created).toLocaleDateString("en-US", dateOptions) }}
-                        </p>
+						<p class=""> {{ new Date(post.date_created).toLocaleDateString("en-US", dateOptions) }} </p>
 						<NuxtLink class="" :to="`/blog/${post.slug}`">
-                            <p class="">
-                                {{ post.title }}
-                            </p>
+                            <p class=""> {{ post.title }} </p>
                             <img class="" :src="image + post.image" :alt="post.image_alt" />
                         </NuxtLink>
-
-
-						<p class="">
-                            {{ post.content.slice(0, 300) }}
-                        </p>
+						<p class=""> {{ post.content.slice(0, 300) }} </p>
 					</div>
 				</div>
 			</div>
 		</div>
+        <TheFooter />
 	</div>
 </template>
 
 <script setup>
+    useHead({
+      title: 'Directus Blog',
+      meta: [
+        { name: 'description', content: 'My simple Directus Blog.' }
+      ],
+      bodyAttrs: {
+        class: 'debug-screens'
+      },
+      // script: [ { children: 'console.log(\'Hello world\')' } ]
+    })
     const { getItems } = useDirectusItems();
     const posts = await getItems({ 
         collection: "pages",
