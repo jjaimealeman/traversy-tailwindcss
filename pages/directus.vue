@@ -1,6 +1,5 @@
 <template>
 	<div class="container mx-auto">
-        <TheHeader />
 		<div class="">
 			<div class="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full" v-for="post in posts">
 				<div class="overflow-hidden transition-shadow duration-300 bg-white rounded">
@@ -15,7 +14,6 @@
 				</div>
 			</div>
 		</div>
-        <TheFooter />
 	</div>
 </template>
 
