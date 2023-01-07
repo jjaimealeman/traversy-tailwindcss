@@ -20,7 +20,8 @@ module.exports = {
         gray: colors.slate,
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
       },
     },
   },
