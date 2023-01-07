@@ -5,9 +5,9 @@
 				<div class="overflow-hidden transition-shadow duration-300 bg-white rounded">
 					<div class="">
 						<p class=""> {{ new Date(post.date_created).toLocaleDateString("en-US", dateOptions) }} </p>
-						<NuxtLink class="" :to="`/blog/${post.slug}`">
+						<NuxtLink :to="`/blog/${post.slug}`">
                             <p class=""> {{ post.title }} </p>
-                            <img class="" :src="image + post.image" :alt="post.image_alt" />
+                            <img :src="image + post.image" :alt="post.image_alt" />
                         </NuxtLink>
 						<p class=""> {{ post.content.slice(0, 300) }} </p>
 					</div>
@@ -24,7 +24,7 @@
         { name: 'description', content: 'My simple Directus Blog.' }
       ],
       bodyAttrs: {
-        class: 'debug-screens'
+        class: 'debug-screens bg-zinc-900/[0.98]'
       },
       // script: [ { children: 'console.log(\'Hello world\')' } ]
     })
