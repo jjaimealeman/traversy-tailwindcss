@@ -1,13 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // https://v3.nuxtjs.org/guide/directory-structure/nuxt.config/
 import { resolve } from 'path'
+import SelectionColor from 'SelectionColor.js'
 export default defineNuxtConfig({
-    // ssr: true
+    ssr: true,
     alias: {
         // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config/#alias 
         "@": resolve(__dirname, '/'),
     },
     css: ['~/assets/css/tailwind.css'],
+    vue: {
+        compilerOptions: {
+            isCustomElement: tag => tag.includes('-')
+        },
+    },
     modules: [
         '@nuxtjs/tailwindcss',
         '@pinia/nuxt',

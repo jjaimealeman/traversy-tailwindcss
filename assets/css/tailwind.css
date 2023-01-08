@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  /* Base styles */
+    /* Base styles */
+    :root {
+        --highlight-color: null;
+    }
+    ::selection {
+        background: var(--highlight-color);
+    }
     body {
         font-family: 'Noto Sans', sans-serif;
     }
@@ -13,14 +19,13 @@
 }
 
 @layer components {
-    ::selection {
-        @apply bg-zinc-800 text-white;
-    }
-
+    /* ::selection { */
+    /* @apply bg-zinc-800 text-white; */
+    /* } */
 }
 
-    /**/
-    /* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
-    /* The components layer is for class-based styles that you want to be able to override with utilities. */
-    /* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
-    /**/
+/**/
+/* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
+/* The components layer is for class-based styles that you want to be able to override with utilities. */
+/* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
+/**/
