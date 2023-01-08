@@ -13,19 +13,16 @@
 
 
 <script setup lang="ts">
+import { ref} from 'vue'
+const awesome = ref(true)
+
 useHead({
   title: 'Home',
   meta: [
     { name: 'description', content: 'My amazing site.' }
   ],
-  bodyAttrs: {
-    class: 'debug-screens bg-zinc-900/[0.98]'
-  },
-  // script: [ { children: 'console.log(\'Hello world\')' } ]
-})
+});
 
-import { ref} from 'vue'
-const awesome = ref(true)
 
 
 </script>

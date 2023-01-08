@@ -1,7 +1,7 @@
 <template>
     <!-- <div class="min-h-screen py-8 flex flex-col justify-center relative overflow-hidden lg:py-12"> -->
     <div class="container mx-auto">
-        <div class="absolute inset-0 bg-[url(~/assets/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+        <!-- <div class="absolute inset-0 bg-[url(~/assets/grid.svg)] bg-top [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div> -->
         <img class="opacity-50 absolute inset-0 [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" :src="img(imageFile, { width: 1920, fit: 'cover' })" :alt="post.image_alt" />
         <!-- <img :src="img(imageFile)" alt=""> -->
         <!-- <img :src="img(imageFile)" alt="original" /> -->
@@ -31,22 +31,13 @@
     });
     const post = posts[0];
     if (!post) throwError('No article found, 404')
-
     const imageFile = post.image;
     const { getThumbnail: img } = useDirectusFiles();
-
-
-
 
     useHead({
         title: 'Blog',
             meta: [
                 { name: 'description', content: 'My amazing site.' }
         ],
-        bodyAttrs: {
-            class: 'debug-screens bg-zinc-900/[0.98]'
-        },
-        // script: [ { children: 'console.log(\'Hello world\')' } ]
     });
-
 </script>
