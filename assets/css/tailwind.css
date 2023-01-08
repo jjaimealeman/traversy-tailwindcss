@@ -4,12 +4,12 @@
 
 @layer base {
     /* Base styles */
-    :root {
-        --highlight-color: null;
-    }
-    ::selection {
-        background: var(--highlight-color);
-    }
+    /* :root { */
+        /* --highlight-color: null; */
+    /* } */
+    /* ::selection { */
+        /* background: var(--highlight-color); */
+    /* } */
     body {
         font-family: 'Noto Sans', sans-serif;
     }
@@ -19,9 +19,9 @@
 }
 
 @layer components {
-    /* ::selection { */
-    /* @apply bg-zinc-800 text-white; */
-    /* } */
+    ::selection {
+    @apply bg-zinc-800 text-white;
+    }
 }
 
 /**/

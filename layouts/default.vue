@@ -3,7 +3,7 @@
         <TheHeader />
             <slot />
         <TheFooter />
-        <SelectionColor />
+        <!-- <SelectionColor /> -->
     </div>
 </template>
 

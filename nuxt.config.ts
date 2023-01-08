@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // https://v3.nuxtjs.org/guide/directory-structure/nuxt.config/
 import { resolve } from 'path'
-import SelectionColor from 'SelectionColor.js'
+// import SelectionColor from 'SelectionColor.js'
 export default defineNuxtConfig({
     ssr: true,
     alias: {
