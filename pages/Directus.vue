@@ -13,7 +13,8 @@
           </p>
         </NuxtLink>
         <p class="px-4 pb-2 font-bold text-base">{{ post.title }}</p>
-        <p class="px-4 pb-6" v-html="post.content2.slice(0, 200)"></p>
+        <!--p class="px-4 pb-6" v-html="post.content2.slice(0, 200)"></p-->
+        <p class="px-4 pb-6 h-24 overflow-y-hidden overflow-clip leading-6" v-html="post.content2"></p>
       </div>
     </div>
   </div>
