@@ -14,6 +14,7 @@ module.exports = {
     `./nuxt.config.{js,ts}`,
   ],
   theme: {
+    // Screen setup for ClipboardWebsite and LoopStudios
     screens: {
       sm: '480px',   // 640px
       md: '768px',   // 768px
@@ -32,6 +33,9 @@ module.exports = {
         sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
         bold: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
       },
+      letterSpacing: {
+        widest: '0.3em'
+      }
     },
   },
   variants: {
