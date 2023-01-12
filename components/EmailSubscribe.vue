@@ -1,5 +1,5 @@
 <template>
-  <section class="neutral flex items-center justify-center py-4 my-4 rounded-2xl shadow-lg mx-4">
+  <section class="flex items-center justify-center py-4 my-8 rounded-2xl shadow-lg mx-4">
     <div class="p-2 mx-6 rounded-2xl">
       <div class="flex flex-col md:flex-row rounded-xl overflow-hidden">
         <img
@@ -7,10 +7,10 @@
           src="~/assets/image.jpg" alt="">
         <div class="p-6 md:p-12">
           <h2 class="text-xl font-medium text-center text-white md:text-left">
-            Subscribe to our newsletter.
+            {{ header }}
           </h2>
           <p class="max-w-xs my-4 text-xs leading-5 tracking-wide text-center text-white md:text-left">
-            Joing today and start saving with our progam!
+            {{ subheader }}
           </p>
           <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
             <input
@@ -28,24 +28,50 @@
 </template>
 
 
+<script setup>
+const header = ref('Subscribe to our Newsletter')
+const subheader = ref('Join today and start saving with our progam!')
+</script>
+
+
 <style lang="postcss" scoped>
-.neutral {
-  @apply bg-neutral-700 shadow-neutral-500;
+.zinc {
+  @apply bg-zinc-700 shadow-zinc-500;
 
   ::selection {
-    @apply bg-neutral-300 text-neutral-800;
+    @apply bg-zinc-300 text-zinc-800;
   }
 
   div {
-    @apply bg-neutral-800;
+    @apply bg-zinc-800;
   }
 
   button {
-    @apply text-neutral-900 bg-emerald-500/75 hover:bg-emerald-500;
+    @apply text-zinc-900 bg-emerald-500/75 hover:bg-emerald-500;
   }
 
   input {
-    @apply bg-neutral-800 border-neutral-600 placeholder:text-neutral-600;
+    @apply bg-zinc-800 border-zinc-600 placeholder:text-zinc-600;
+  }
+}
+
+.sky {
+  @apply bg-sky-700 shadow-sky-500;
+
+  ::selection {
+    @apply bg-sky-300 text-sky-800;
+  }
+
+  div {
+    @apply bg-sky-800;
+  }
+
+  button {
+    @apply text-sky-900 bg-emerald-500/75 hover:bg-emerald-500;
+  }
+
+  input {
+    @apply bg-sky-800 border-sky-600 placeholder:text-sky-600;
   }
 }
 </style>
