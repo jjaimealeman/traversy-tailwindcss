@@ -1,9 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // https://v3.nuxtjs.org/guide/directory-structure/nuxt.config/
+import { resolve } from 'path'
+// import SelectionColor from 'SelectionColor.js'
 export default defineNuxtConfig({
-    // SERVER SIDE RENDERING MODE
-    // ssr: true
-    css: [],
+    ssr: true,
+    alias: {
+        // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config/#alias 
+        "@": resolve(__dirname, '/'),
+    },
+    css: ['~/assets/css/tailwind.css'],
+    vue: {
+        compilerOptions: {
+            isCustomElement: tag => tag.includes('-')
+        },
+    },
     modules: [
         '@nuxtjs/tailwindcss',
         '@pinia/nuxt',
@@ -40,9 +50,9 @@ export default defineNuxtConfig({
     vite: {
         optimizeDeps: {
             include: [
-                '@heroicons/vue/20/solid',
-                '@heroicons/vue/24/solid',
-                '@heroicons/vue/24/outline',
+                // '@heroicons/vue/20/solid',
+                // '@heroicons/vue/24/solid',
+                // '@heroicons/vue/24/outline',
                 '@headlessui/vue',
                 'vue',
                 'pinia',

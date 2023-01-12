@@ -1,10 +1,8 @@
 <template>
-    <div class="container mx-auto">
-        <TheHeader />
-        <EmailSubscribe />
-        <TheCard />
-        <TheFooter />
-    </div>
+  <div class="container mx-auto">
+    <EmailSubscribe class="zinc" />
+    <TheCard />
+  </div>
 </template>
 
 
@@ -14,10 +12,5 @@ useHead({
   meta: [
     { name: 'description', content: 'My amazing site.' }
   ],
-  bodyAttrs: {
-    class: 'debug-screens'
-  },
-  // script: [ { children: 'console.log(\'Hello world\')' } ]
-})
+});
 </script>
-

@@ -14,14 +14,28 @@ module.exports = {
     `./nuxt.config.{js,ts}`,
   ],
   theme: {
+    // Screen setup for ClipboardWebsite and LoopStudios
+    screens: {
+      sm: '480px',   // 640px
+      md: '768px',   // 768px
+      lg: '976px',   // 1024px
+      xl: '1440px'   // 1280px
+    },
     extend: {
       colors: {
-        primary: colors.violet,
-        gray: colors.slate,
+        strongCyan: 'hsl(171, 66%, 44%)',
+        lightBlue: 'hsl(233, 100%, 69%)',
+        darkGrayishBlue: 'hsl(210, 10%, 33%)',
+        grayishBlue: 'hsl(201, 11%, 66%)',
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
+        bold: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
       },
+      letterSpacing: {
+        widest: '0.3em'
+      }
     },
   },
   variants: {
