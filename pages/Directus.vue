@@ -11,9 +11,9 @@
             new Date(post.date_created).toLocaleDateString('en-US', dateOptions)
           }}
           </p>
-          <p class="px-4 pb-2 font-bold text-base">{{ post.title }}</p>
-          <p class="px-4 pb-6" v-html="post.content2.slice(0, 200)"></p>
         </NuxtLink>
+        <p class="px-4 pb-2 font-bold text-base">{{ post.title }}</p>
+        <p class="px-4 pb-6" v-html="post.content2.slice(0, 200)"></p>
       </div>
     </div>
   </div>
