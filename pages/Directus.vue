@@ -7,10 +7,14 @@
         v-for="post in posts">
         <NuxtLink :to="`/blog/${post.slug}`">
           <img class="w-full rounded-t-md" :src="image + post.image + imagekey" width="400" :alt="post.image_alt" />
-          <p class="px-4 py-2 text-green-700 text-base"> {{
-            new Date(post.date_created).toLocaleDateString('en-US', dateOptions)
-          }}
-          </p>
+          <p class="block md:hidden px-4 py-2 text-green-700 text-base"> {{
+            new Date(post.date_created).toLocaleDateString('en-US',
+              dateOptions1)
+          }} </p>
+          <p class="hidden md:block px-4 py-2 text-green-700 text-base"> {{
+            new Date(post.date_created).toLocaleDateString('en-US',
+              dateOptions2)
+          }} </p>
         </NuxtLink>
         <p class="px-4 pb-2 font-bold text-base">{{ post.title }}</p>
         <!--p class="px-4 pb-6" v-html="post.content2.slice(0, 200)"></p-->
@@ -31,7 +35,13 @@ const posts = await getItems({
 });
 const image = 'https://y4aazew4.directus.app/assets/'
 const imagekey = '?fit=cover&width=400&quality=80'
-const dateOptions = {
+const dateOptions1 = {
+  weekday: 'short',
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+}
+const dateOptions2 = {
   weekday: 'long',
   year: 'numeric',
   month: 'long',
