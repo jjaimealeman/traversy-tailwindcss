@@ -401,6 +401,9 @@ function toggleMenu() {
   }
 }
 
+definePageMeta({
+  layout: 'default',
+});
 useHead({
   title: 'Loop Studios',
   meta: [{ name: 'description', content: 'My simple Directus Blog.' }],
