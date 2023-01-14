@@ -29,3 +29,7 @@ LearnVue add dark mode
 https://www.youtube.com/watch?v=cGN91TLXrC8
 
 
+## Fri 13 Jan 2023
+I thought of a way to create a color gradient or background in SVG files by useing the --tailwind-css-variable 👍
+Gotta check that out later.
+
