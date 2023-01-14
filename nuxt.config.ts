@@ -20,11 +20,7 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         'nuxt-icon',
         'nuxt-directus',
-        '@nuxtjs/supabase'
     ],
-    supabase: {
-      // OPTIONS
-    },
     directus: {
         url: 'https://y4aazew4.directus.app/',
     },
