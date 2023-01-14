@@ -14,6 +14,9 @@
         <li>
           <NuxtLink to="/Shortly"> Shortly </NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/Testimonial"> Testimonial </NuxtLink>
+        </li>
       </ul>
     </nav>
   </header>
