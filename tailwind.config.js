@@ -36,7 +36,14 @@ module.exports = {
         grayishViolet: 'hsl(257, 7%, 63%)',
         veryDarkBlue: 'hsl(255, 11%, 22%)',
         veryDarkViolet: 'hsl(260, 8%, 14%) ',
-
+        // Fylo
+        darkBlue: 'hsl(217, 28%, 15%)',
+        darkBlue1: 'hsl(218, 28%, 13%)',
+        darkBlue2: 'hsl(216, 53%, 9%)',
+        darkBlue3: 'hsl(219, 30%, 18%)',
+        accentCyan: 'hsl(176, 68%, 64%)',
+        accentBlue: 'hsl(198, 60%, 50%)',
+        lightRed: 'hsl(1, 100% 63%)'
       },
       fontFamily: {
         // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
