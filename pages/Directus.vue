@@ -49,10 +49,10 @@ const dateOptionLong = {
   day: 'numeric',
 }
 definePageMeta({
-  layout: 'custom',
+  layout: 'default',
 });
 useHead({
-  title: 'Directus Blog',
+  title: 'Directus',
   meta: [{ name: 'description', content: 'My simple Directus Blog.' }],
 });
 </script>
