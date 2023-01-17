@@ -405,7 +405,7 @@ definePageMeta({
   layout: 'default',
 });
 useHead({
-  title: 'Loop Studios',
+  title: 'LoopStudios',
   meta: [{ name: 'description', content: 'My simple Directus Blog.' }],
 });
 </script>
