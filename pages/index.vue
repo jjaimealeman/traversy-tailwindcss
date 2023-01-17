@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto">
-
+    <!-- alert message -->
     <div
-      class="flex flex-col items-center justify-center pt-12 pb-6 m-10 bg-amber-300 text-zinc-700 ring-amber-700 ring-4 rounded-md w-2/3 mx-auto shadow-xl shadow-sky-300">
+      class="flex flex-col items-center justify-center pt-12 pb-6 m-10 bg-amber-300 text-zinc-700 ring-amber-700 ring-4 rounded-md w-2/3 mx-auto shadow-xl shadow-sky-300 dark:shadow-gray-900">
       <h3 class="text-2xl">
         These are my experiments with TailwindCSS, Directus, &amp; Nuxt.
       </h3>
