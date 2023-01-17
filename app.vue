@@ -20,7 +20,8 @@ useHead({
   //    },
   //  ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'en',
+    class: 'scroll-smooth'
   },
   link: [
     {
