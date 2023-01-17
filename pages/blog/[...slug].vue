@@ -41,6 +41,9 @@
     if (!post) throwError('No article found, 404')
     const imageFile = post.image;
     const { getThumbnail: img } = useDirectusFiles();
+definePageMeta({
+  layout: 'default',
+});
 
     useHead({
         title: 'Blog',
