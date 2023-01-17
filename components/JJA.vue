@@ -1,88 +1,110 @@
 <template>
-  <svg width="39" height="33" viewBox="0 0 39 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M26.6631 6.53027L35.8059 24.816H17.5202L26.6631 6.53027Z" fill="url(#paint0_linear_402_30)" />
-    <g filter="url(#filter0_d_402_30)">
-      <path d="M35.8059 24.816L26.663 6.53027L26.3721 7.11209L35.2241 24.816H35.8059Z"
-        fill="url(#paint1_linear_402_30)" />
-    </g>
-    <path
-      d="M12.9488 6.53027H22.0916V15.6731C22.0916 20.7225 17.9982 24.8159 12.9488 24.8159C7.89932 24.8159 3.80594 20.7225 3.80591 15.6731H12.9488L12.9488 6.53027Z"
-      fill="url(#paint2_linear_402_30)" />
-    <g filter="url(#filter1_d_402_30)">
-      <path
-        d="M22.0916 6.53027H12.9487L13.3624 6.94574H21.684V16.0886C21.684 18.2812 20.9297 20.2936 19.6722 21.8688C21.1742 20.2397 22.0916 18.0636 22.0916 15.6731V6.53027Z"
-        fill="url(#paint3_linear_402_30)" />
-    </g>
-    <g filter="url(#filter2_d_402_30)">
-      <path d="M3.81521 16.0888L12.949 16.0888V15.6733H3.80591C3.80591 15.8126 3.80903 15.9511 3.81521 16.0888Z"
-        fill="url(#paint4_linear_402_30)" />
+  <svg width="700" height="350" viewBox="0 0 700 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="jja-animated" clip-path="url(#clip0_818_10)">
+      <g id="abottom">
+        <path id="Rectangle 32" d="M606.841 207.173L513.477 45.4619L606.897 45.4607L700.261 207.172L606.841 207.173Z"
+          fill="#07ABA5" />
+        <path id="Rectangle 34" d="M697.887 207.173L604.523 45.4617L606.892 45.4647L700.255 207.176L697.887 207.173Z"
+          fill="#0EB4A2" />
+        <path id="Vector 4" d="M606.245 45.4522L513.475 45.4523L514.715 47.6097H606.245V45.4522Z" fill="#0EB4A2" />
+        <path id="Rectangle 32_2" d="M420.112 207.172L513.476 45.4614L560.187 126.365L466.823 288.076L420.112 207.172Z"
+          fill="#14BC9E" />
+        <path id="Vector 1" d="M560.186 126.364L555.326 134.775L514.664 47.5172L560.186 126.364Z"
+          fill="url(#paint0_linear_818_10)" />
+      </g>
+      <g id="atop">
+        <path id="Rectangle 32_3" d="M606.841 207.173L513.477 45.4619L606.897 45.4607L700.261 207.172L606.841 207.173Z"
+          fill="#07ABA5" />
+        <path id="Rectangle 34_2" d="M697.887 207.173L604.523 45.4617L606.892 45.4647L700.255 207.176L697.887 207.173Z"
+          fill="#0EB4A2" />
+        <path id="Vector 4_2" d="M606.245 45.4522L513.475 45.4523L514.715 47.6097H606.245V45.4522Z" fill="#0EB4A2" />
+        <path id="Rectangle 32_4" d="M420.112 207.172L513.476 45.4614L560.187 126.365L466.823 288.076L420.112 207.172Z"
+          fill="#14BC9E" />
+        <path id="Vector 1_2" d="M560.186 126.364L555.326 134.775L514.664 47.5172L560.186 126.364Z"
+          fill="url(#paint1_linear_818_10)" />
+      </g>
+      <g id="jright">
+        <path id="Rectangle 32_5" d="M233.328 207.162H420.056L373.347 288.067H186.619L233.328 207.162Z"
+          fill="#205680" />
+        <path id="Rectangle 34_3" d="M233.329 207.162H420.057L418.87 209.212H232.143L233.329 207.162Z" fill="#2E7CB8" />
+        <path id="Rectangle 32_6" d="M326.692 45.4511L420.056 207.162L326.636 207.163L233.273 45.4523L326.692 45.4511Z"
+          fill="#8FBEE3" />
+        <path id="Rectangle 34_4" d="M326.691 45.4514L420.055 207.162L417.687 207.159L324.323 45.4485L326.691 45.4514Z"
+          fill="#C7DFF1" />
+        <path id="Vector 2" d="M326.531 45.4612H233.279L234.525 47.6186H326.531V45.4612Z" fill="#C7DFF1" />
+        <path id="Vector 1_3" d="M326.637 207.162L321.783 198.748L417.682 207.162H326.637Z"
+          fill="url(#paint2_linear_818_10)" />
+      </g>
+      <g id="jleft">
+        <path id="Rectangle 32_7" d="M46.7089 207.162H233.437L186.728 288.067H0L46.7089 207.162Z" fill="#205680" />
+        <path id="Rectangle 34_5" d="M46.7102 207.162H233.438L232.251 209.212H45.5234L46.7102 207.162Z"
+          fill="#2E7CB8" />
+        <path id="Rectangle 32_8" d="M140.073 45.4511L233.437 207.162L140.017 207.163L46.6534 45.4523L140.073 45.4511Z"
+          fill="#8FBEE3" />
+        <path id="Rectangle 34_6" d="M140.072 45.4514L233.436 207.162L231.067 207.159L137.704 45.4485L140.072 45.4514Z"
+          fill="#C7DFF1" />
+        <path id="Vector 2_2" d="M139.912 45.4612H46.6602L47.9062 47.6186H139.912V45.4612Z" fill="#C7DFF1" />
+        <path id="Vector 1_4" d="M140.018 207.162L135.164 198.748L231.063 207.162H140.018Z"
+          fill="url(#paint3_linear_818_10)" />
+      </g>
     </g>
     <defs>
-      <filter id="filter0_d_402_30" x="23.3721" y="3.53027" width="15.4338" height="24.2856"
-        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha" />
-        <feOffset />
-        <feGaussianBlur stdDeviation="1.5" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_402_30" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_402_30" result="shape" />
-      </filter>
-      <filter id="filter1_d_402_30" x="9.94873" y="3.53027" width="15.1429" height="21.3386"
-        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha" />
-        <feOffset />
-        <feGaussianBlur stdDeviation="1.5" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_402_30" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_402_30" result="shape" />
-      </filter>
-      <filter id="filter2_d_402_30" x="0.805908" y="12.6733" width="15.1431" height="6.41553"
-        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha" />
-        <feOffset />
-        <feGaussianBlur stdDeviation="1.5" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_402_30" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_402_30" result="shape" />
-      </filter>
-      <linearGradient id="paint0_linear_402_30" x1="26.6631" y1="6.53027" x2="17.5618" y2="24.7744"
+      <linearGradient id="paint0_linear_818_10" x1="559.823" y1="125.951" x2="514.786" y2="47.9449"
         gradientUnits="userSpaceOnUse">
-        <stop stop-color="#F9F871" />
-        <stop offset="0.986364" stop-color="#E19E20" />
+        <stop stop-color="#0EB4A2" />
+        <stop offset="1" stop-color="#14BC9E" />
       </linearGradient>
-      <linearGradient id="paint1_linear_402_30" x1="26.663" y1="6.53027" x2="35.8059" y2="25.0253"
+      <linearGradient id="paint1_linear_818_10" x1="559.823" y1="125.951" x2="514.786" y2="47.9449"
         gradientUnits="userSpaceOnUse">
-        <stop stop-color="white" />
-        <stop offset="0.986364" stop-color="#F1DB57" />
+        <stop stop-color="#0EB4A2" />
+        <stop offset="1" stop-color="#14BC9E" />
       </linearGradient>
-      <linearGradient id="paint2_linear_402_30" x1="12.9488" y1="6.53027" x2="12.9488" y2="24.8159"
+      <linearGradient id="paint2_linear_818_10" x1="327.177" y1="207.055" x2="417.25" y2="207.055"
         gradientUnits="userSpaceOnUse">
-        <stop stop-color="#1BBB98" />
-        <stop offset="1" stop-color="#007CA0" />
+        <stop stop-color="#579ED5" />
+        <stop offset="1" stop-color="#8FBEE3" />
       </linearGradient>
-      <linearGradient id="paint3_linear_402_30" x1="13.2953" y1="16.7617" x2="22.0916" y2="6.53027"
+      <linearGradient id="paint3_linear_818_10" x1="140.558" y1="207.055" x2="230.631" y2="207.055"
         gradientUnits="userSpaceOnUse">
-        <stop stop-color="#1AB998" />
-        <stop offset="0.296875" stop-color="#0C989C" />
-        <stop offset="1" stop-color="white" />
+        <stop stop-color="#579ED5" />
+        <stop offset="1" stop-color="#8FBEE3" />
       </linearGradient>
-      <linearGradient id="paint4_linear_402_30" x1="12.949" y1="15.8811" x2="3.80591" y2="15.8811"
-        gradientUnits="userSpaceOnUse">
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="#0C989C" />
-      </linearGradient>
+      <clipPath id="clip0_818_10">
+        <rect width="700" height="350" fill="white" />
+      </clipPath>
     </defs>
   </svg>
 </template>
+
+<style>
+#abottom,
+#atop,
+#jleft,
+#jright {
+  transition: all 0.5s ease;
+}
+
+#abottom {
+  transform: translateY(100%);
+}
+
+svg:hover #jleft {
+  transform: translateX(26.7%);
+}
+
+svg:hover #jright {
+  transform: translateX(-26.7%);
+}
+
+svg:hover #atop {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+svg:hover #abottom {
+  transform: translateY(0%);
+}
+</style>
 
 <script>
 export default {
