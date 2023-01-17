@@ -187,7 +187,7 @@ definePageMeta({
   layout: 'default',
 });
 useHead({
-  title: 'Testimial page.',
+  title: 'Testimonial',
   meta: [{ name: 'description', content: 'My simple Directus Blog.' }],
 });
 
