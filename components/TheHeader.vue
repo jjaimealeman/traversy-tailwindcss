@@ -1,12 +1,12 @@
 <template>
   <header class="fixed top-0 w-full border-b-2 border-b-blue-400 bg-gray-100/[0.97] dark:bg-zinc-900/[0.95] z-50">
-    <nav class="container mx-auto py-2 flex flex-row items-center justify-between z-50">
+    <nav class="container mx-auto py-2 flex flex-col md:flex-row items-center justify-between z-50">
       <div>
         <NuxtLink to="/" title="Home">
           <JJA class="w-12 h-12" />
         </NuxtLink>
       </div>
-      <ul>
+      <ul class="text-center">
         <li>
           <NuxtLink to="/"> Home </NuxtLink>
         </li>
@@ -31,7 +31,7 @@
       </ul>
     </nav>
   </header>
-  <div class="py-8"></div>
+  <div class="py-16 md:py-12"></div>
 </template>
 
 <style scoped>
@@ -50,14 +50,14 @@ a:hover {
 }
 
 li {
-  @apply inline-block
+  @apply inline-block mx-4 mt-2 md:mt-0;
 }
-
+/*
 li:not(:first-child) {
   @apply ml-8
 }
 
 li:last-child {
   @apply mr-8;
-}
+}*/
 </style>
