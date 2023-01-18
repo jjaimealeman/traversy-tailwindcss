@@ -2,7 +2,7 @@
 
 <DarkMode />
 
-  <footer class="w-full mt-8 p-4 bg-gray-100/[0.97] dark:bg-zinc-900/[0.95] text-zinc-400 border-t-2 border-t-blue-400 text-center">
+  <footer class="w-full mt-8 p-4 bg-gray-100/[0.97] dark:bg-zinc-900/[0.95] text-zinc-600 border-t-2 border-t-blue-400 text-center">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row justify-between italic">
         <p class="text-xs">
