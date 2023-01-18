@@ -396,8 +396,8 @@ const hidden = ref(true)
 function toggleMenu() {
   hidden.value = !hidden.value
   if (flex.value) {
-    flex.value.classList.toggle("flex", hidden.value)
-    flex.value.classList.toggle("hidden", !hidden.value)
+    flex.value.classList.toggle("hidden", hidden.value)
+    flex.value.classList.toggle("flex", !hidden.value)
   }
 }
 
