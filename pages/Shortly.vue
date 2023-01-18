@@ -34,15 +34,12 @@
 
     <!-- mobile menu -->
     <div ref="flex" id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-28 z-50">
-      <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-        <a href="#" class="w-full text-center hover:tracking-widest duration-200 transition-all">Features</a>
-        <a href="#" class="w-full text-center hover:tracking-widest duration-200 transition-all">Pricing</a>
-        <a href="#" class="w-full text-center hover:tracking-widest duration-200 transition-all">Resources</a>
-        <a href="#"
-          class="w-full pt-6 border-t border-gray-400 text-center hover:tracking-widest duration-200 transition-all">Login</a>
-        <a href="#"
-          class="w-full py-3 text-center rounded-full bg-cyan hover:tracking-widest duration-200 transition-all">Sign
-          Up</a>
+      <div class="flex flex-col items-center justify-center w-full font-bold text-white rounded-sm">
+        <a href="#" class="w-full py-2 text-center hover:bg-veryDarkViolet duration-200 transition-all">Features</a>
+        <a href="#" class="w-full py-2 text-center hover:bg-veryDarkViolet duration-200 transition-all">Pricing</a>
+        <a href="#" class="w-full py-2 text-center hover:bg-veryDarkViolet duration-200 transition-all">Resources</a>
+        <a href="#" class="w-full my-4 py-3 text-center rounded-full bg-cyanLight hover:bg-cyan duration-200 transition-colors">Login</a>
+        <a href="#" class="w-full py-3 text-center rounded-full bg-cyanLight hover:bg-cyan duration-200 transition-colors">Sign Up</a>
       </div>
     </div>
   </nav>
@@ -263,8 +260,8 @@ const hidden = ref(true)
 function toggleMenu() {
   hidden.value = !hidden.value
   if (flex.value) {
-    flex.value.classList.toggle("flex", hidden.value)
-    flex.value.classList.toggle("hidden", !hidden.value)
+    flex.value.classList.toggle("hidden", hidden.value)
+    flex.value.classList.toggle("flex", !hidden.value)
   }
 }
 definePageMeta({
