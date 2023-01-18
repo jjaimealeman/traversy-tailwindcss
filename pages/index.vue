@@ -73,11 +73,16 @@
       </section>
     </main>
 
-    <div class="container mx-auto mb-8 flex justify-center md:justify-end">
+    <div class="container mx-auto mb-8 flex justify-between">
       <button class="rounded-lg bg-sky-500 text-white mr-6 md:mr-0 mt-6 p-2 px-4 ring-2 ring-sky-700"
-        aria-label="Read More">
+        aria-label="about me">
+        Learn more about ME!
+        <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-left" />
+      </button>
+      <button class="rounded-lg bg-sky-500 text-white mr-6 md:mr-0 mt-6 p-2 px-4 ring-2 ring-sky-700"
+        aria-label="read more about services">
         <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-right" />
-        Read more about my Services
+        Read more about Services
       </button>
     </div>
 
