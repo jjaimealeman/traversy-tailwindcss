@@ -14,7 +14,7 @@ module.exports = {
     `./nuxt.config.{js,ts}`,
   ],
   theme: {
-    // Screen setup for ClipboardWebsite and LoopStudios
+    // Screen setup for ALL Traversy projects.
     screens: {
       sm: '480px',   // 640px
       md: '768px',   // 768px
@@ -27,7 +27,7 @@ module.exports = {
         strongCyan: 'hsl(171, 66%, 44%)',
         lightBlue: 'hsl(233, 100%, 69%)',
         darkGrayishBlue: 'hsl(210, 10%, 33%)',
-        grayishBlue: 'hsl(201, 11%, 66%)',
+        grayishBlue1: 'hsl(201, 11%, 66%)',
         // Shortly
         cyan: 'hsl(180, 66%, 49%)',
         cyanLight: 'hsl(180, 66%, 69%)',
@@ -43,7 +43,12 @@ module.exports = {
         darkBlue3: 'hsl(219, 30%, 18%)',
         accentCyan: 'hsl(176, 68%, 64%)',
         accentBlue: 'hsl(198, 60%, 50%)',
-        lightRed: 'hsl(1, 100% 63%)'
+        lightRed: 'hsl(1, 100% 63%)',
+        // Bookmark
+        softBlue: 'hsl(231, 69%, 60%)',
+        softRed: 'hsl(0, 94%, 66%)',
+        grayishBlue: 'hsl(229, 8%, 60%)',
+        veryDarkBlue: 'hsl(229, 31%, 21%)',
       },
       fontFamily: {
         // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
