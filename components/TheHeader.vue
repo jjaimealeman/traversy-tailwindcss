@@ -1,6 +1,5 @@
 <template>
-  <header
-    class="fixed top-0 w-full border-b-2 border-b-blue-400 bg-gray-100/[0.97] dark:bg-zinc-900/[0.95] z-50">
+  <header class="fixed top-0 w-full border-b-2 border-b-blue-400 bg-gray-100/[0.97] dark:bg-zinc-900/[0.95] z-50">
     <nav class="container mx-auto py-2 flex flex-row items-center justify-between z-50">
       <div>
         <NuxtLink to="/" title="Home">
@@ -25,6 +24,9 @@
         </li>
         <li>
           <NuxtLink to="/Fylo"> Fylo </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/Bookmark"> Bookmark </NuxtLink>
         </li>
       </ul>
     </nav>
@@ -54,7 +56,8 @@ li {
 li:not(:first-child) {
   @apply ml-8
 }
+
 li:last-child {
-    @apply mr-8;
-  }
+  @apply mr-8;
+}
 </style>
