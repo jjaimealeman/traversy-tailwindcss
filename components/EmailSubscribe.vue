@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center justify-center py-4 my-8 rounded-2xl shadow-lg mx-4">
+  <section class="flex items-center justify-center py-4 mx-4 my-8 rounded-2xl shadow-xl">
     <div class="p-2 mx-6 rounded-2xl">
       <div class="flex flex-col md:flex-row rounded-xl overflow-hidden">
         <img
@@ -36,7 +36,7 @@ const subheader = ref('Join today and start saving with our progam!')
 
 <style lang="postcss" scoped>
 .zinc {
-  @apply bg-zinc-700 shadow-zinc-500;
+  @apply bg-zinc-700 shadow-zinc-500 dark:shadow-zinc-900;
 
   ::selection {
     @apply bg-zinc-300 text-zinc-800;
@@ -55,24 +55,5 @@ const subheader = ref('Join today and start saving with our progam!')
   }
 }
 
-.sky {
-  @apply bg-sky-700 shadow-sky-500;
-
-  ::selection {
-    @apply bg-sky-300 text-sky-800;
-  }
-
-  div {
-    @apply bg-sky-800;
-  }
-
-  button {
-    @apply text-sky-900 bg-emerald-500/75 hover:bg-emerald-500;
-  }
-
-  input {
-    @apply bg-sky-800 border-sky-600 placeholder:text-sky-600;
-  }
-}
 </style>
 

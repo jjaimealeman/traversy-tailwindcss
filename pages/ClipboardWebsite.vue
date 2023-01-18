@@ -49,7 +49,7 @@
           <!-- Item 1 -->
           <div>
             <h5>Quick Search</h5>
-            <p class="max-w-full md:max-w-md text-grayishBlue">
+            <p class="max-w-full md:max-w-md text-grayishBlue1">
               Easily search your snippets by content, caregory, web address, application, and more.
             </p>
           </div>
@@ -57,7 +57,7 @@
           <!-- Item 2 -->
           <div>
             <h5>iCloud Sync</h5>
-            <p class="max-w-full md:max-w-md text-grayishBlue">
+            <p class="max-w-full md:max-w-md text-grayishBlue1">
               Instantly saves and syncs snippets across all your devices.
             </p>
           </div>
@@ -65,7 +65,7 @@
           <!-- Item 3 -->
           <div>
             <h5>Completely History</h5>
-            <p class="max-w-full md:max-w-md text-grayishBlue">
+            <p class="max-w-full md:max-w-md text-grayishBlue1">
               Retrieve any snippets from the first moment you started using the app.
             </p>
           </div>
@@ -100,7 +100,7 @@
         <div class="flex flex-col items-center space-y-5">
           <img class="mb-6" src="~/assets/clipboardwebsite/icon-blacklist.svg" alt="">
           <h5>Create Blacklists</h5>
-          <p class="max-w-full md:max-w-md text-grayishBlue">
+          <p class="max-w-full md:max-w-md text-grayishBlue1">
             Easily search your snippets by content, category, web address, application and more.
           </p>
         </div>
@@ -108,7 +108,7 @@
         <div class="flex flex-col items-center space-y-5">
           <img class="mb-6" src="~/assets/clipboardwebsite/icon-text.svg" alt="">
           <h5>Plaintext Snippets</h5>
-          <p class="max-w-full md:max-w-md text-grayishBlue">
+          <p class="max-w-full md:max-w-md text-grayishBlue1">
             Remove unwanted formatting from copied text for a consistent look.
           </p>
         </div>
@@ -116,7 +116,7 @@
         <div class="flex flex-col items-center space-y-5">
           <img class="mb-6" src="~/assets/clipboardwebsite/icon-preview.svg" alt="">
           <h5>Sneak Preview</h5>
-          <p class="max-w-full md:max-w-md text-grayishBlue">
+          <p class="max-w-full md:max-w-md text-grayishBlue1">
             Quick preview of all snippets on your Clipboard for easy access.
           </p>
         </div>
@@ -165,7 +165,7 @@
 
         <!-- Container for Menus and Social -->
         <div
-          class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue">
+          class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue1">
           <!-- Menus -->
           <div class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0">
             <!-- Menu 1 -->
@@ -211,7 +211,7 @@
 }
 
 .section-content {
-  @apply max-w-3xl mx-auto leading-9 text-center text-grayishBlue;
+  @apply max-w-3xl mx-auto leading-9 text-center text-grayishBlue1;
 }
 
 .button-container {

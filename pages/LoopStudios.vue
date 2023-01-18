@@ -396,13 +396,16 @@ const hidden = ref(true)
 function toggleMenu() {
   hidden.value = !hidden.value
   if (flex.value) {
-    flex.value.classList.toggle("flex", hidden.value)
-    flex.value.classList.toggle("hidden", !hidden.value)
+    flex.value.classList.toggle("hidden", hidden.value)
+    flex.value.classList.toggle("flex", !hidden.value)
   }
 }
 
+definePageMeta({
+  layout: 'default',
+});
 useHead({
-  title: 'Loop Studios',
+  title: 'LoopStudios',
   meta: [{ name: 'description', content: 'My simple Directus Blog.' }],
 });
 </script>
