@@ -25,6 +25,7 @@ useHead({
   },
   link: [
     {
+      rel: 'dns-prefetch', 
       rel: 'preload',
       as: 'font',
       type: 'font/woff2',
@@ -32,6 +33,7 @@ useHead({
       href: '/fonts/noto-sans-v27-latin-regular.woff2'
     },
     {
+      rel: 'dns-prefetch', 
       rel: 'preload',
       as: 'font',
       type: 'font/woff2',
