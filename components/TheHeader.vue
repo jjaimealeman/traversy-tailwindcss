@@ -37,7 +37,10 @@
 <style scoped>
 /* home route and active route will show in bold as it matches / and /about */
 a.router-link-active {
+  /* 
   @apply text-blue-400 dark:text-blue-400;
+  */ 
+  @apply border-b-2 border-blue-400;
 }
 
 /* exact link will show the primary color for only the exact matching link */
@@ -46,7 +49,7 @@ a {
 }
 
 a:hover {
-  @apply text-blue-400 duration-200;
+  @apply text-blue-400 duration-200 border-0;
 }
 
 li {
