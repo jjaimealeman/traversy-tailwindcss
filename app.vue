@@ -25,7 +25,7 @@ useHead({
   },
   link: [
     {
-      rel: 'dns-prefetch', 
+      rel: 'dns-prefetch',
       rel: 'preload',
       as: 'font',
       type: 'font/woff2',
@@ -33,12 +33,28 @@ useHead({
       href: '/fonts/noto-sans-v27-latin-regular.woff2'
     },
     {
-      rel: 'dns-prefetch', 
+      rel: 'dns-prefetch',
       rel: 'preload',
       as: 'font',
       type: 'font/woff2',
       crossorigin: 'anonymous',
       href: '/fonts/plus-jakarta-sans-v3-latin-700.woff2'
+    },
+    {
+      rel: 'dns-prefetch',
+      rel: 'preload',
+      as: 'font',
+      type: 'font/woff2',
+      crossorigin: 'anonymous',
+      href: '/fonts/architects-daughter-v18-latin-regular.woff2'
+    },
+    {
+      rel: 'dns-prefetch',
+      rel: 'preload',
+      as: 'font',
+      type: 'font/woff2',
+      crossorigin: 'anonymous',
+      href: '/fonts/be-vietnam-pro-v10-latin-regular.woff2'
     }
   ],
   bodyAttrs: {

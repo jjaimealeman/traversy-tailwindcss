@@ -15,12 +15,12 @@ module.exports = {
   ],
   theme: {
     // Screen setup for ALL Traversy projects.
-    screens: {
-      sm: '480px',   // 640px
-      md: '768px',   // 768px
-      lg: '976px',   // 1024px
-      xl: '1440px'   // 1280px
-    },
+    // screens: {
+      // sm: '480px',   // 640px
+      // md: '768px',   // 768px
+      // lg: '976px',   // 1024px
+      // xl: '1440px'   // 1280px
+    // },
     extend: {
       colors: {
         // LoopStudios
@@ -32,7 +32,6 @@ module.exports = {
         cyan: 'hsl(180, 66%, 49%)',
         cyanLight: 'hsl(180, 66%, 69%)',
         darkViolet: 'hsl(257, 27%, 26%)',
-        red: 'hsl(0, 87%, 67%)',
         grayishViolet: 'hsl(257, 7%, 63%)',
         veryDarkBlue: 'hsl(255, 11%, 22%)',
         veryDarkViolet: 'hsl(260, 8%, 14%) ',
@@ -54,6 +53,9 @@ module.exports = {
         // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
         bold: ['Plus Jakarta Sans', ...defaultTheme.fontFamily.sans],
+        // NEW FONTS: Architect Daughter and Be Vietnam
+        arch: ['Architects Daughter', 'cursive'],
+        viet: ['Be Vietnam Pro', 'sans-serif'],
       },
       letterSpacing: {
         widest: '0.3em'
