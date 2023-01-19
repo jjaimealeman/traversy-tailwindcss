@@ -1,14 +1,12 @@
 <template>
   <div class="container mx-auto py-8 lg:py-16 xl:py-20">
 
-    <main class="text-zinc-800 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 lg:gap-x-14 xl:gap-x-20">
-      <section id="online-presence" class="order-first col-span-2 bg-gray-200/90 border-t-4 border-t-yellow-500 border-b-4 border-b-red-600
-        p-4 md:p-8
-        ">
-        <h1 class="
-        text-3xl md:text-4xl lg:text-5xl 
-        pb-4
-        ">Do you have an online presence?</h1>
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 lg:gap-x-14 xl:gap-x-20">
+      <section id="online-presence"
+        class="order-first col-span-2 bg-gray-200/90 border-t-4 border-t-yellow-500 border-b-4 border-b-red-600 p-4 md:p-8 ">
+        <h1 class=" text-3xl md:text-4xl lg:text-5xl pb-4 ">
+          Do you have an online presence?
+        </h1>
         <p class="text-xl md:text-2xl lg:text-3xl py-4 md:py-6 lg:py-8">
           I help El Paso business owners by building a website that will attract more customers.
         </p>
@@ -16,7 +14,7 @@
           Having a strong web presence is more important now than ever!
         </p>
         <p class="text-xl md:text-2xl lg:text-3xl py-4 md:py-6 lg:py-8">
-          The power of the shopping and searching is in everyones pockets, purses, and cars!!
+          The power of Google Maps &amp; Searching is in everyones pockets, purses, and cars!!
         </p>
         <p class="text-xl md:text-2xl lg:text-3xl py-4 md:py-6 lg:py-8 italic">
           How do you stack up against your competition?! 
@@ -73,26 +71,39 @@
       </section>
     </main>
 
-    <div class="container mx-auto mb-8 flex justify-between">
-      <button class="rounded-lg bg-sky-500 text-white mr-6 md:mr-0 mt-6 p-2 px-4 ring-2 ring-sky-700"
-        aria-label="about me">
-        Learn more about ME!
-        <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-left" />
-      </button>
-      <button class="rounded-lg bg-sky-500 text-white mr-6 md:mr-0 mt-6 p-2 px-4 ring-2 ring-sky-700"
-        aria-label="read more about services">
-        <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-right" />
-        Read more about Services
-      </button>
+    <div class="container mx-auto mb-8 flex flex-col md:flex-row items-center justify-center md:justify-between">
+      <NuxtLink to="/About">
+        <button class="rounded-lg bg-sky-500 text-white mt-6 p-2 px-4 ring-2 ring-sky-700" aria-label="about me">
+          Learn more about ME!
+          <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-left" />
+        </button>
+      </NuxtLink>
+      <NuxtLink to="/Services">
+        <button class="rounded-lg bg-sky-500 text-white mt-6 p-2 px-4 ring-2 ring-sky-700"
+          aria-label="read more about services">
+          Read more about Services
+          <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-right" />
+        </button>
+      </NuxtLink>
     </div>
 
   </div>
 </template>
 
 
+<style scoped>
+h1,
+h2,
+li,
+p {
+  @apply font-viet text-zinc-700;
+}
+</style>
+
+
 <script setup lang="ts">
 definePageMeta({
-  layout: 'none',
+  layout: 'website915',
 });
 useHead({
   title: '915website | Web Development and Design Services',
