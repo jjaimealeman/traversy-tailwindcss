@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-8 lg:py-16 xl:py-20">
+  <div class="container mx-auto pb-8 lg:pb-16 xl:pb-20">
 
     <main class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-y-5 lg:gap-x-14 xl:gap-x-20">
       <section id="hello"
@@ -83,7 +83,7 @@ h1 {
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'none',
+  layout: 'website915',
 });
 useHead({
   title: 'About 915website | Web Development and Design Services',

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-8 lg:py-16 xl:py-20">
+  <div class="container mx-auto pb-8 lg:pb-16 xl:pb-20">
 
     <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 lg:gap-x-14 xl:gap-x-20">
       <section id="online-presence"
@@ -29,7 +29,7 @@
             Your website is <span class="underline">GUARANTEED</span> unique!
           </li>
           <li class="pt-4 md:pt-8 text-lg md:text-xl">
-            Fast & Reliable Web Hosting.
+            Fast &amp; Reliable Web Hosting.
           </li>
           <li class="pt-4 md:pt-8 text-lg md:text-xl">
             Contact Form.
