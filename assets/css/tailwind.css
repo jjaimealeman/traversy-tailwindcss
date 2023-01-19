@@ -81,8 +81,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('./fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/be-vietnam-pro-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/be-vietnam-pro-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 
@@ -92,8 +92,8 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('./fonts/be-vietnam-pro-v10-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/be-vietnam-pro-v10-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/fonts/be-vietnam-pro-v10-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/be-vietnam-pro-v10-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 /* architects-daughter-regular - latin */
@@ -101,13 +101,13 @@
   font-family: 'Architects Daughter';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/architects-daughter-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/architects-daughter-v18-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('./fonts/architects-daughter-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./fonts/architects-daughter-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./fonts/architects-daughter-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/architects-daughter-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/architects-daughter-v18-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
+       url('/fonts/architects-daughter-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/architects-daughter-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/architects-daughter-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/architects-daughter-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/architects-daughter-v18-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
   font-display: swap;
 }
 
