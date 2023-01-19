@@ -73,13 +73,14 @@
 
     <div class="container mx-auto mb-8 flex flex-col md:flex-row items-center justify-center md:justify-between">
       <NuxtLink to="/About">
-        <button class="rounded-lg bg-sky-500 text-white mt-6 p-2 px-4 ring-2 ring-sky-700" aria-label="about me">
+        <button class="rounded-lg bg-sky-400 text-zinc-800 font-bold mt-6 p-2 px-4 ring-2 ring-sky-700"
+          aria-label="about me">
           Learn more about ME!
           <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-left" />
         </button>
       </NuxtLink>
       <NuxtLink to="/Services">
-        <button class="rounded-lg bg-sky-500 text-white mt-6 p-2 px-4 ring-2 ring-sky-700"
+        <button class="rounded-lg bg-sky-400 text-zinc-800 font-bold mt-6 p-2 px-4 ring-2 ring-sky-700"
           aria-label="read more about services">
           Read more about Services
           <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-right" />
