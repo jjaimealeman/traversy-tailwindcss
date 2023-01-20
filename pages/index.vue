@@ -122,7 +122,7 @@
         measure the performance of their websites.
       </p>
       <div class="max-w-3xl mx-auto mt-8 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
-        <img src="https://i.imgur.com/cEUo3ax.png" alt="">
+        <img src="https://i.imgur.com/cEUo3ax.png" width="672" height="175" alt="">
       </div>
       <p class="prose mx-auto text-left mt-8">
         This screenshot is the result of running a Lighthouse test on my own personal website. 👍
