@@ -24,43 +24,53 @@ useHead({
     class: 'scroll-smooth'
   },
   link: [
+    //  {
+    //    rel: 'dns-prefetch',
+    //    rel: 'preload',
+    //    as: 'font',
+    //    type: 'font/woff2',
+    //    crossorigin: 'anonymous',
+    //    href: '/fonts/noto-sans-v27-latin-regular.woff2'
+    //  },
+    //  {
+    //    rel: 'dns-prefetch',
+    //    rel: 'preload',
+    //    as: 'font',
+    //    type: 'font/woff2',
+    //    crossorigin: 'anonymous',
+    //    href: '/fonts/plus-jakarta-sans-v3-latin-700.woff2'
+    //  },
+    //  {
+    //    rel: 'dns-prefetch',
+    //    rel: 'preload',
+    //    as: 'font',
+    //    type: 'font/woff2',
+    //    crossorigin: 'anonymous',
+    //    href: '/fonts/architects-daughter-v18-latin-regular.woff2'
+    //  },
     {
-      rel: 'dns-prefetch',
+      //    rel: 'dns-prefetch',
       rel: 'preload',
-      as: 'font',
-      type: 'font/woff2',
-      crossorigin: 'anonymous',
-      href: '/fonts/noto-sans-v27-latin-regular.woff2'
-    },
-    {
-      rel: 'dns-prefetch',
-      rel: 'preload',
-      as: 'font',
-      type: 'font/woff2',
-      crossorigin: 'anonymous',
-      href: '/fonts/plus-jakarta-sans-v3-latin-700.woff2'
-    },
-    {
-      rel: 'dns-prefetch',
-      rel: 'preload',
-      as: 'font',
-      type: 'font/woff2',
-      crossorigin: 'anonymous',
-      href: '/fonts/architects-daughter-v18-latin-regular.woff2'
-    },
-    {
-      rel: 'dns-prefetch',
-      rel: 'preload',
+      rel: 'prefetch',
       as: 'font',
       type: 'font/woff2',
       crossorigin: 'anonymous',
       href: '/fonts/be-vietnam-pro-v10-latin-regular.woff2'
+    },
+    {
+      //    rel: 'dns-prefetch',
+      rel: 'preload',
+      rel: 'prefetch',
+      as: 'font',
+      type: 'font/woff2',
+      crossorigin: 'anonymous',
+      href: '/fonts/bebas-neue-v9-latin-regular.woff2'
     }
   ],
   bodyAttrs: {
     //        class: 'debug-screens bg-zinc-901/[0.98]',
     //        'overflow-x-hidden' // prevents the body from adding a side scrollbar
-    class: 'debug-screens bg-white-900/[0.98] overflow-x-hidden',
+    class: 'debug-screens subpixel-antialiased overflow-x-hidden',
     // script: [ { children: 'console.log(\'Hello world\')' } ]
   },
 });
