@@ -8,6 +8,12 @@ export default defineNuxtConfig({
         // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config/#alias 
         "@": resolve(__dirname, '/'),
     },
+    // app: {
+    //   pageTransition: {
+    //     name: 'page',
+    //     mode: 'out-in'
+    //   }
+    // },
     css: ['~/assets/css/tailwind.css'],
     vue: {
         compilerOptions: {
