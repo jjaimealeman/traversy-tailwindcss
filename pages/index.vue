@@ -5,7 +5,7 @@
 
     <div class="relative md:w-1/2 lg:w-3/4 text-center md:text-left">
       <h1 class="block font-beba uppercase mb-4">
-        <span class="text-5xl md:text-7xl lg:text-9xl text-sky-500">915</span>
+        <span class="text-5xl md:text-7xl lg:text-9xl text-sky-600">915</span>
         <span class="text-4xl md:text-6xl lg:text-8xl">website</span>
         <span class="text-3xl md:text-5xl lg:text-7xl">.com</span>
       </h1>
