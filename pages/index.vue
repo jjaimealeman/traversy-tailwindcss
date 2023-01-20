@@ -1,103 +1,143 @@
 <template>
-  <div class="container mx-auto pb-8 lg:pb-16 xl:pb-20">
 
-    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 lg:gap-x-14 xl:gap-x-20">
-      <section id="online-presence"
-        class="order-first col-span-2 bg-gray-200/90 border-t-4 border-t-yellow-500 border-b-4 border-b-red-600 p-4 md:p-8 ">
-        <h1 class=" text-3xl md:text-4xl lg:text-5xl pb-4 ">
-          Do you have an online presence?
-        </h1>
-        <p class="text-xl md:text-2xl lg:text-3xl py-4 md:py-6 lg:py-8">
-          I help El Paso business owners by building a website that will attract more customers.
-        </p>
-        <p class="text-xl md:text-2xl lg:text-3xl py-4 md:py-6 lg:py-8">
-          Having a strong web presence is more important now than ever!
-        </p>
-        <p class="text-xl md:text-2xl lg:text-3xl py-4 md:py-6 lg:py-8">
-          The power of Google Maps &amp; Searching is in everyones pockets, purses, and cars!!
-        </p>
-        <p class="text-xl md:text-2xl lg:text-3xl py-4 md:py-6 lg:py-8 italic">
-          How do you stack up against your competition?! 
-        </p>
-      </section>
-      <section id="dealio"
-        class="col-span-2 lg:col-span-1 bg-gray-200/90 p-4 md:p-8 border-t-4 border-t-sky-500 border-b-4 border-b-black">
-        <h2 class="text-lg md:text-xl lg:text-2xl"> Here’s the dealio! </h2>
-        <ul class="list-disc list-outside pl-4">
-          <li class="pt-4 md:pt-8 text-lg md:text-xl">
-            Fully 100% custom coded. <br />
-            Your website is <span class="underline">GUARANTEED</span> unique!
-          </li>
-          <li class="pt-4 md:pt-8 text-lg md:text-xl">
-            Fast &amp; Reliable Web Hosting.
-          </li>
-          <li class="pt-4 md:pt-8 text-lg md:text-xl">
-            Contact Form.
-          </li>
-          <li class="pt-4 md:pt-8 text-lg md:text-xl">
-            Domain name.
-          </li>
-          <li class="pt-4 md:pt-8 text-lg md:text-xl">
-            Regular Backups.
-          </li>
-        </ul>
-        <h2 class="text-lg md:text-xl lg:text-2xl pt-4 md:pt-8"> Additional Options </h2>
-        <p class="pt-4 md:pt-8 text-lg md:text-xl">
-          Custom logo, English & Spanish translation, multiple themes, e-commerce capability, personalized Control
-          Panel are additional options!
-        </p>
-        <p class="text-xs md:text-sm pt-4 text-right">
-          Complete details on the Services Page.
-        </p>
-      </section>
-      <section id="description"
-        class="col-span-2 -order-2 lg:order-none p-4 md:p-8 bg-gray-200/90 border-t-4 border-t-gray-400 border-b-4 border-b-gray-400">
-        <p class="text-lg md:text-xl lg:text-2xl">
-          I offer affordable Web Development &amp; Design Services  for the savvy El Paso TX<span
-            class="text-red-600">*</span> Business Owner.
-        </p>
-      </section>
-      <section id="only"
-        class="col-span-2 lg:col-span-1 p-4 md:p-8 text-right text-sm bg-gray-200/90 border-t-4 border-t-red-600 border-b-4 border-b-yellow-500">
-        <p class="font-bold pb-4">
-          <span class="text-red-600">*</span> El Paso TX Business Owners ONLY!
-        </p>
-        <p class="pb-4">
-          WHY only local?
-        </p>
-        <p>
-          I pride myself on delivering a great product and service with real face-to-face Customer Interaction. 
-        </p>
-      </section>
-    </main>
+  <section id="header"
+    class="flex flex-col md:flex-row items-center justify-center mx-auto my-4 md:my-8 lg:my-16 md:space-x-6 lg:space-x-12">
 
-    <div class="container mx-auto mb-8 flex flex-col md:flex-row items-center justify-center md:justify-between">
-      <NuxtLink to="/About">
-        <button class="rounded-lg bg-sky-400 text-zinc-800 font-bold mt-6 p-2 px-4 ring-2 ring-sky-700"
-          aria-label="about me">
-          Learn more about ME!
-          <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-left" />
-        </button>
-      </NuxtLink>
-      <NuxtLink to="/Services">
-        <button class="rounded-lg bg-sky-400 text-zinc-800 font-bold mt-6 p-2 px-4 ring-2 ring-sky-700"
-          aria-label="read more about services">
-          Read more about Services
-          <Icon class="animate-ping" name="ic:round-keyboard-double-arrow-right" />
-        </button>
-      </NuxtLink>
+    <div class="relative md:w-1/2 lg:w-3/4 text-center md:text-left">
+      <h1 class="block font-beba uppercase mb-4">
+        <span class="text-5xl md:text-7xl lg:text-9xl text-sky-500">915</span>
+        <span class="text-4xl md:text-6xl lg:text-8xl">website</span>
+        <span class="text-3xl md:text-5xl lg:text-7xl">.com</span>
+      </h1>
+      <span
+        class="absolute left-1/4 md:left-0 px-2 py-1 font-arch text-rose-700 text-lg md:text-2xl lg:text-3xl -rotate-12 z-10 bg-gradient-to-r from-amber-100 to-amber-400">AFFORDABLE</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl pb-4 pt-12 z-20">Web Development and Design services for local
+        business owners in El Paso
+        Texas.
+      </h2>
     </div>
+  </section>
 
-  </div>
+  <section id="presence"
+    class="w-fit mx-auto border-4 border-sky-500 my-4 md:my-8 lg:my-16 p-4 md:p-8 rounded-3xl shadow-zinc-500 shadow-2xl">
+    <h3 class=" text-3xl md:text-4xl lg:text-5xl pb-4">
+      Do you have an online presence?
+    </h3>
+    <p class="text-xl md:text-2xl lg:text-3xl ">
+      Having a strong web presence is more important now than ever!
+    </p>
+    <p class="text-xl md:text-2xl lg:text-3xl pb-4">
+      I help El Paso business owners by building a website that will attract more customers.
+    </p>
+    <p class="text-xl md:text-2xl lg:text-3xl ">
+      The power of Google Maps &amp; Searching is in everyones pockets, purses, and cars!!
+    </p>
+    <p class="text-xl md:text-2xl lg:text-3xl italic">
+      How do you stack up against your competition?! 
+    </p>
+  </section>
+
+
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-8 py-12">
+    <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
+      <h3 class="text-3xl">Domain Name</h3>
+      <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="gg:rename" />
+      <p>Free registration and management of your website.</p>
+      <p>Privacy Protection is enabled by default to deter spam from ever getting to your inbox!</p>
+    </div>
+    <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
+      <h3 class="text-3xl">Web Hosting</h3>
+      <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="ph:computer-tower" />
+      <p>A fast and reliable host means your visitors don't have to wait long for your website to connect.</p>
+      <p>If for any reason your Host is not responding, another instantly connects to share the load.</p>
+    </div>
+    <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
+      <h3 class="text-3xl">Basic SEO</h3>
+      <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="ph:google-logo-bold" />
+      <p class="italic">"Content is King!"</p>
+      <p>Proper organization of the page elements, strong keyword focused titles and descriptions are vital.</p>
+      <p>Get recognized by Google with well-structured content.</p>
+      <p></p>
+    </div>
+    <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
+      <h3 class="text-3xl">Fully Custom</h3>
+      <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="carbon:tools-alt" />
+      <p>Crafted carefully chosen icons, images, colors, and fonts.</p>
+      <p>Hand-coding is a tedious process, but it guarantees your website to be unique!</p>
+    </div>
+    <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
+      <h3 class="text-3xl">Mobile First Design</h3>
+      <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="ion:iphone" />
+      <p>A responsive design is expected by your visitors</p>
+      <p>Your website will look great on all mobile devices. From small screens, to tablets, all the way to larger
+        screens.</p>
+    </div>
+    <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
+      <h3 class="text-3xl">Optimized Images</h3>
+      <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="clarity:picture-line" />
+      <p>Large photos are carefully resized and duplicated to serve on smaller screens.</p>
+      <p>Smaller screens download smaller photos, and larger screens get the full size photo.</p>
+    </div>
+  </section>
+
+  <section id="details" class="flex flex-col items-center justify-center">
+    <div class="border-t-4 border-sky-500 w-full text-center">
+      <h3 class="text-3xl mt-8">Why do I hand code?</h3>
+      <p class="prose mx-auto text-left my-4">
+        I love hand-coding static websites and it's a craft I have been perfecting for a few years.
+      </p>
+      <p class="prose mx-auto text-left mb-4">
+        You may know someone who loves to carve wood and makes the most beautiful figurines. Or you may know an old
+        school mechanic who doesn't use power tools - his hands are his greatest tools. Or an artistic stone mason who
+        hammers and chisels his stone to create works of art.
+      </p>
+      <p class="prose mx-auto text-left mb-4">
+        That's me ... the perfectionist! <br>
+        The wood worker. The mechanic. The mason. <br>
+        The artist!
+        <icon name="emojione-v1:artist-palette" />
+      </p>
+      <p class="prose mx-auto text-left mb-4">
+        A well coded static website can load many times faster than any WordPress, Wix, or SquareSpace website.
+        Those services are fine to use, but they generate some horribly bloated unnecessary code. That "code bloat" will
+        slow down your website.
+      </p>
+      <p class="prose mx-auto text-left mb-4">
+        High speed Internet is available almost everywhere and most smartphones are capable of 4G/5G speeds.
+        The average web site visitor will abandon a slow loading website within 3-5 seconds.
+        If they abandon your slow loading website never to return again, where will they go? Probably to Google and
+        search for your
+        competitor.
+      </p>
+      <p class="prose mx-auto text-left">
+        Google will index, crawl, and measure the performance of your mobile website. This is <strong>mobile-first
+          indexing</strong>. There are many metrics that Google uses to determine if your website performs well or not.
+      </p>
+      <p class="prose mx-auto text-left">
+        I work very very hard to make sure to meet those numbers.
+      </p>
+      <p class="prose mx-auto text-left">
+        Many Developers use <a href="https://developer.chrome.com/docs/lighthouse/overview/" target="_blank">Google
+          lighthouse</a> to
+        measure the performance of their websites.
+      </p>
+      <div class="max-w-3xl mx-auto mt-8 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
+        <img src="https://i.imgur.com/cEUo3ax.png" alt="">
+      </div>
+      <p class="prose mx-auto text-left mt-8">
+        This screenshot is the result of running a Lighthouse test on my own personal website. 👍
+      </p>
+    </div>
+  </section>
+
+
+
 </template>
 
 
 <style scoped>
-h1,
-h2,
-li,
-p {
-  @apply font-viet text-zinc-700;
+.ass {
+  @apply bg-sky-300/50 border-2 border-dotted border-zinc-800 m-2;
 }
 </style>
 
@@ -107,7 +147,7 @@ definePageMeta({
   layout: 'website915',
 });
 useHead({
-  title: '915website | Web Development and Design Services',
+  title: '915website | El Paso Web Development and Design Services',
   meta: [
     { name: 'description', content: 'Web Development and Design services for local business owners in El Paso Texas.' }
   ],
