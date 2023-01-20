@@ -11,107 +11,122 @@
         /* background: var(--highlight-color); */
     /* } */
     body {
+        /*
         font-family: 'Noto Sans', sans-serif;
+        */
+        font-family: 'Be Vietnam Pro', sans-serif;
     }
     h1, h2, h3 {
+      /*
         font-family: 'Plus Jakarta Sans', sans-serif;
+      */
+font-family: 'Bebas Neue', cursive;
     }
 
-/* noto-sans-300 - latin */
-@font-face {
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local(''),
-       url('/fonts/noto-sans-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/noto-sans-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
-}
+  /* noto-sans-300 - latin */
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('/fonts/noto-sans-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/noto-sans-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+  }
 
-/* noto-sans-regular - latin */
-@font-face {
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('/fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/noto-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
-}
+  /* noto-sans-regular - latin */
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/noto-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+  }
 
-/* noto-sans-italic - latin */
-@font-face {
-  font-family: 'Noto Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local(''),
-       url('/fonts/noto-sans-v27-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/noto-sans-v27-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
-}
+  /* noto-sans-italic - latin */
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/noto-sans-v27-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/noto-sans-v27-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+  }
 
-/* noto-sans-700 - latin */
-@font-face {
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('/fonts/noto-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/noto-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
-}
-/* plus-jakarta-sans-700 - latin */
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/plus-jakarta-sans-v3-latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('/fonts/plus-jakarta-sans-v3-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/plus-jakarta-sans-v3-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/plus-jakarta-sans-v3-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/plus-jakarta-sans-v3-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/plus-jakarta-sans-v3-latin-700.svg#PlusJakartaSans') format('svg'); /* Legacy iOS */
-  font-display: swap;
-}
+  /* noto-sans-700 - latin */
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/fonts/noto-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/noto-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+  }
+  /* plus-jakarta-sans-700 - latin */
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/plus-jakarta-sans-v3-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('/fonts/plus-jakarta-sans-v3-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/plus-jakarta-sans-v3-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/plus-jakarta-sans-v3-latin-700.woff') format('woff'), /* Modern Browsers */
+        url('/fonts/plus-jakarta-sans-v3-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/plus-jakarta-sans-v3-latin-700.svg#PlusJakartaSans') format('svg'); /* Legacy iOS */
+    font-display: swap;
+  }
 
-/* be-vietnam-pro-regular - latin */
-@font-face {
-  font-family: 'Be Vietnam Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('/fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/be-vietnam-pro-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
-}
+  /* be-vietnam-pro-regular - latin */
+  @font-face {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/be-vietnam-pro-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+  }
 
-/* be-vietnam-pro-500 - latin */
-@font-face {
-  font-family: 'Be Vietnam Pro';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-       url('/fonts/be-vietnam-pro-v10-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/be-vietnam-pro-v10-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
-}
-/* architects-daughter-regular - latin */
-@font-face {
-  font-family: 'Architects Daughter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/architects-daughter-v18-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('/fonts/architects-daughter-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/architects-daughter-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/architects-daughter-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/architects-daughter-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/architects-daughter-v18-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
-  font-display: swap;
-}
+  /* be-vietnam-pro-500 - latin */
+  @font-face {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('/fonts/be-vietnam-pro-v10-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/be-vietnam-pro-v10-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+  }
+  /* architects-daughter-regular - latin */
+  @font-face {
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/architects-daughter-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('/fonts/architects-daughter-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/architects-daughter-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/architects-daughter-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('/fonts/architects-daughter-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/architects-daughter-v18-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
+    font-display: swap;
+  }
 
-
+  /* bebas-neue-regular - latin */
+  @font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/bebas-neue-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      font-display: swap;
+  }
 
 }
 
