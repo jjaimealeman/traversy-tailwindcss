@@ -62,8 +62,13 @@
     <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
       <h3 class="text-3xl">Fully Custom</h3>
       <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="carbon:tools-alt" />
-      <p>Crafted carefully chosen icons, images, colors, and fonts.</p>
+      <p>Carefully chosen icons, images, colors, and fonts.</p>
       <p>Hand-coding is a tedious process, but it guarantees your website to be unique!</p>
+      <p>
+        <NuxtLink class="bg-amber-300 border-b-2 border-amber-400 hover:bg-white hover:border-b-2 hover:border-sky-400 p-1
+          transition-colors duration-300" to="/About#details">Why do I code by hand?
+        </NuxtLink>
+      </p>
     </div>
     <div class="text-center p-4 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
       <h3 class="text-3xl">Mobile First Design</h3>
@@ -77,56 +82,6 @@
       <Icon class="text-sky-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h20" name="clarity:picture-line" />
       <p>Large photos are carefully resized and duplicated to serve on smaller screens.</p>
       <p>Smaller screens download smaller photos, and larger screens get the full size photo.</p>
-    </div>
-  </section>
-
-  <section id="details" class="flex flex-col items-center justify-center">
-    <div class="border-t-4 border-sky-500 w-full text-center">
-      <h3 class="text-3xl mt-8">Why do I hand code?</h3>
-      <p class="prose mx-auto text-left my-4">
-        I love hand-coding static websites and it's a craft I have been perfecting for a few years.
-      </p>
-      <p class="prose mx-auto text-left mb-4">
-        You may know someone who loves to carve wood and makes the most beautiful figurines. Or you may know an old
-        school mechanic who doesn't use power tools - his hands are his greatest tools. Or an artistic stone mason who
-        hammers and chisels his stone to create works of art.
-      </p>
-      <p class="prose mx-auto text-left mb-4">
-        That's me ... the perfectionist! <br>
-        The wood worker. The mechanic. The mason. <br>
-        The artist!
-        <icon name="emojione-v1:artist-palette" />
-      </p>
-      <p class="prose mx-auto text-left mb-4">
-        A well coded static website can load many times faster than any WordPress, Wix, or SquareSpace website.
-        Those services are fine to use, but they generate some horribly bloated unnecessary code. That "code bloat" will
-        slow down your website.
-      </p>
-      <p class="prose mx-auto text-left mb-4">
-        High speed Internet is available almost everywhere and most smartphones are capable of 4G/5G speeds.
-        The average web site visitor will abandon a slow loading website within 3-5 seconds.
-        If they abandon your slow loading website never to return again, where will they go? Probably to Google and
-        search for your
-        competitor.
-      </p>
-      <p class="prose mx-auto text-left">
-        Google will index, crawl, and measure the performance of your mobile website. This is <strong>mobile-first
-          indexing</strong>. There are many metrics that Google uses to determine if your website performs well or not.
-      </p>
-      <p class="prose mx-auto text-left">
-        I work very very hard to make sure to meet those numbers.
-      </p>
-      <p class="prose mx-auto text-left">
-        Many Developers use <a href="https://developer.chrome.com/docs/lighthouse/overview/" target="_blank">Google
-          lighthouse</a> to
-        measure the performance of their websites.
-      </p>
-      <div class="max-w-3xl mx-auto mt-8 border-4 border-sky-300 rounded-xl shadow-zinc-500 shadow-xl">
-        <img src="https://i.imgur.com/cEUo3ax.png" width="672" height="175" alt="">
-      </div>
-      <p class="prose mx-auto text-left mt-8">
-        This screenshot is the result of running a Lighthouse test on my own personal website. 👍
-      </p>
     </div>
   </section>
 
