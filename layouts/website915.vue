@@ -8,7 +8,7 @@
 
       <nav class="bg-white w-full p-4 text-lg md:text-xl lg:text-2xl text-right">
         <NuxtLink class="pr-4" to="/"> Home </NuxtLink>
-        <NuxtLink class="pr-4" to="/"> About </NuxtLink>
+        <NuxtLink class="pr-4" to="/About"> About </NuxtLink>
         <NuxtLink class="pr-4" to="/"> Services </NuxtLink>
         <NuxtLink class="pr-4" to="/"> Contact </NuxtLink>
       </nav>
