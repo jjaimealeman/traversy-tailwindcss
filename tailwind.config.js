@@ -22,6 +22,20 @@ module.exports = {
       // xl: '1440px'   // 1280px
     // },
     extend: {
+      // animate-rainbow bg-clip-text text-transparent whitespace-pre pr-2 bg-gradient-to-b from-red-600 to-sky-700
+      keyframes: {
+        rainbow: {
+          from: {
+            filter: "hue-rotate(0deg)",
+          },
+          to: {
+            filter: "hue-rotate(-360deg)",
+          },
+        },
+      },
+      animation: {
+        rainbow: "rainbow 3s ease infinite",
+      },
       colors: {
         // LoopStudios
         strongCyan: 'hsl(171, 66%, 44%)',
@@ -56,6 +70,7 @@ module.exports = {
         // NEW FONTS: Architect Daughter and Be Vietnam
         arch: ['Architects Daughter', 'cursive'],
         viet: ['Be Vietnam Pro', 'sans-serif'],
+        beba: ['Bebas Neue', 'cursive'],
       },
       letterSpacing: {
         widest: '0.3em'
