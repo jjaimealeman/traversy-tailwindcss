@@ -12,7 +12,8 @@
         </h1>
         <span
           class="absolute left-1/4 md:left-0 px-2 py-1 font-arch text-rose-700 text-lg md:text-2xl lg:text-3xl -rotate-12 z-10 bg-gradient-to-r from-amber-100 to-amber-400">AFFORDABLE</span>
-        <h2 class="text-3xl md:text-4xl lg:text-5xl pb-4 pt-12 z-20">Web Development and Design services for local
+        <h2 class="text-3xl font-beba md:text-4xl lg:text-5xl pb-4 pt-12 z-20">Web Development and Design services for
+          local
           business owners in El Paso
           Texas.
         </h2>
@@ -66,8 +67,7 @@
         <p>Carefully chosen icons, images, colors, and fonts.</p>
         <p>Hand-coding is a tedious process, but it guarantees your website to be unique &amp; fast!</p>
         <p>
-          <NuxtLink class="bg-amber-300 border-b-2 border-amber-400 hover:bg-white hover:border-b-2 hover:border-sky-400 p-1
-          transition-colors duration-300" to="/About#details">Why do I code by hand?
+          <NuxtLink class="alink" to="/About#details">Why do I code by hand?
           </NuxtLink>
         </p>
       </div>

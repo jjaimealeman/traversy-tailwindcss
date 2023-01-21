@@ -162,27 +162,6 @@
 </template>
 
 
-<style scoped>
-h1,
-h2,
-p {
-  @apply font-viet text-zinc-700;
-}
-
-h1 {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.arch {
-  @apply font-arch;
-}
-
-.check {
-  list-style-image: url("~/assets/checkbox2.svg");
-}
-</style>
-
-
 <script setup lang="ts">
 definePageMeta({
   layout: 'website915',
