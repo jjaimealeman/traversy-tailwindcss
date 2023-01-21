@@ -10,18 +10,19 @@
     /* ::selection { */
         /* background: var(--highlight-color); */
     /* } */
-    body {
-        /*
-        font-family: 'Noto Sans', sans-serif;
-        */
-        font-family: 'Be Vietnam Pro', sans-serif;
-    }
-    h1, h2, h3 {
-      /*
-        font-family: 'Plus Jakarta Sans', sans-serif;
-      */
-font-family: 'Bebas Neue', cursive;
-    }
+
+  body {
+    /*
+    font-family: 'Noto Sans', sans-serif;
+    */
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  h1, h2, h3 {
+    /*
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    */
+    font-family: 'Bebas Neue', cursive;
+  }
 
   /* noto-sans-300 - latin */
   @font-face {
