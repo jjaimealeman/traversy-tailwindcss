@@ -2,85 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    /* Base styles */
-    /* :root { */
-        /* --highlight-color: null; */
-    /* } */
-    /* ::selection { */
-        /* background: var(--highlight-color); */
-    /* } */
+/**/
+/* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
+/* The components layer is for class-based styles that you want to be able to override with utilities. */
+/* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
+/**/
 
+@layer base {
+  ::selection {
+    @apply bg-zinc-800 text-white;
+  }
   body {
-    /*
-    font-family: 'Noto Sans', sans-serif;
-    */
     font-family: 'Be Vietnam Pro', sans-serif;
   }
-  h1, h2, h3 {
-    /*
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    */
+  h1 {
     font-family: 'Bebas Neue', cursive;
   }
-
-  /* noto-sans-300 - latin */
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local(''),
-        url('/fonts/noto-sans-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/noto-sans-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    font-display: swap;
+  h2, h3, h4 {
+    font-family: 'Be Vietnam Pro', sans-serif;
   }
 
-  /* noto-sans-regular - latin */
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('/fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/noto-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    font-display: swap;
+  h1, h2, h3, h4 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  /* noto-sans-italic - latin */
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: italic;
-    font-weight: 400;
-    src: local(''),
-        url('/fonts/noto-sans-v27-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/noto-sans-v27-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    font-display: swap;
-  }
-
-  /* noto-sans-700 - latin */
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-        url('/fonts/noto-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/noto-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    font-display: swap;
-  }
-  /* plus-jakarta-sans-700 - latin */
-  @font-face {
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/fonts/plus-jakarta-sans-v3-latin-700.eot'); /* IE9 Compat Modes */
-    src: local(''),
-        url('/fonts/plus-jakarta-sans-v3-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/fonts/plus-jakarta-sans-v3-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/plus-jakarta-sans-v3-latin-700.woff') format('woff'), /* Modern Browsers */
-        url('/fonts/plus-jakarta-sans-v3-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('/fonts/plus-jakarta-sans-v3-latin-700.svg#PlusJakartaSans') format('svg'); /* Legacy iOS */
-    font-display: swap;
-  }
 
   /* be-vietnam-pro-regular - latin */
   @font-face {
@@ -88,8 +33,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('/fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/be-vietnam-pro-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2'),
+        url('/fonts/be-vietnam-pro-v10-latin-regular.woff') format('woff');
     font-display: swap;
   }
 
@@ -99,22 +44,19 @@
     font-style: normal;
     font-weight: 500;
     src: local(''),
-        url('/fonts/be-vietnam-pro-v10-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/be-vietnam-pro-v10-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/fonts/be-vietnam-pro-v10-latin-500.woff2') format('woff2'),
+        url('/fonts/be-vietnam-pro-v10-latin-500.woff') format('woff');
     font-display: swap;
   }
+
   /* architects-daughter-regular - latin */
   @font-face {
     font-family: 'Architects Daughter';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/architects-daughter-v18-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
-        url('/fonts/architects-daughter-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/fonts/architects-daughter-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/architects-daughter-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-        url('/fonts/architects-daughter-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('/fonts/architects-daughter-v18-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
+        url('/fonts/architects-daughter-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('/fonts/architects-daughter-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     font-display: swap;
   }
 
@@ -124,21 +66,20 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('/fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/bebas-neue-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'),
+        url('/fonts/bebas-neue-v9-latin-regular.woff') format('woff');
       font-display: swap;
   }
 
 }
 
 @layer components {
-    ::selection {
-    @apply bg-zinc-800 text-white;
-    }
+  .alink {
+    @apply bg-amber-300 border-b-2 border-amber-400 hover:bg-white hover:border-b-2 hover:border-sky-400 p-1
+          transition-colors duration-300;
+  }
+  .check {
+    list-style-image: url("~/assets/checkbox2.svg");
+  }
 }
 
-/**/
-/* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
-/* The components layer is for class-based styles that you want to be able to override with utilities. */
-/* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
-/**/
